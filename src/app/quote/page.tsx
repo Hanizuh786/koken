@@ -1,0 +1,3 @@
+import QuoteForm from "@/components/QuoteForm";
+export const metadata = { title: "Request quote", description: "Submit a bulk manufacturing, OEM or private label quote request to KOKEN International FZ-LLC." };
+export default function QuotePage() { return <main><section className="pageHero sectionPad"><p className="eyebrow">Request quote</p><h1>Submit your bulk manufacturing enquiry.</h1><p>Select products from the catalogue, add them to your quote list and submit company details for follow-up from sales@koken-inc.cn.</p></section><section className="sectionPad"><QuoteForm/></section></main> }
