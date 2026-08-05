@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+dist
+build
+
+*.zip
+*.rar
+*.7z
+
+.env
+.env.local
+
+.DS_Store
