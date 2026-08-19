@@ -9,20 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
+    "lucide-react": "latest",
+    "next": "14.2.5",
     "nodemailer": "latest",
-    "sass": "latest",
-    "lucide-react": "latest"
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "sass": "1.77.8"
   },
   "devDependencies": {
-    "typescript": "latest",
     "@types/node": "latest",
+    "@types/nodemailer": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "@types/nodemailer": "latest",
     "eslint": "latest",
-    "eslint-config-next": "latest"
+    "eslint-config-next": "latest",
+    "typescript": "latest"
   }
 }
