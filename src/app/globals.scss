@@ -258,11 +258,11 @@ h2 {
   letter-spacing: 0.1em;
 }
 .productCard.bronze .productVisual {
-  background: linear-gradient(135deg, #a96533, #3b1d12);
+ background-image: url('/images/products/bronzy-tobacco-sticks.png');
 }
 .productCard.green .productVisual,
 .productCard.olive .productVisual {
-  background: linear-gradient(135deg, #23864a, #0a3b22);
+background-image: url('/images/products/green-tobacco-sticks.png');
 }
 .productCard.purple .productVisual,
 .productCard.violet .productVisual {
@@ -643,6 +643,7 @@ textarea {
     width: 58px;
     max-width: 60%;
     height: 60%;
+    border-radius: 12px;
     
   }
 
