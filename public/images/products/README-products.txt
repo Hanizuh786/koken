@@ -19,4 +19,3 @@ coffee-herbal-sticks.png
 hnb-device-programme.png
 private-label-packaging.png
 
-The website will automatically display these images on category cards and product detail pages.

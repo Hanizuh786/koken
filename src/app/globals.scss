@@ -33,6 +33,7 @@ a {
 img {
   max-width: 100%;
   display: block;
+  border-radius: 20px;
 }
 .sectionPad {
   padding: 72px clamp(20px, 5vw, 76px);
@@ -51,8 +52,8 @@ img {
   backdrop-filter: blur(18px);
 }
 .brand img {
-  width: 80%;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 .navShell nav {
   display: flex;
@@ -158,6 +159,7 @@ h2 {
 }
 .logoHero img {
   filter: drop-shadow(0 18px 30px rgba(7, 31, 77, 0.18));
+  
 }
 @keyframes floatLogo {
   50% {
