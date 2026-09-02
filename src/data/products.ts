@@ -46,7 +46,7 @@ export const products: Product[] = [
     categoryLabel: "Tobacco sticks",
     badge: "Tobacco range",
     accent: "bronze",
-    shortDescription: "A rich tobacco stick profile with warm aroma and refined character for bulk B2B enquiries.",
+    shortDescription: "Rich tobacco profile with warm aroma and a refined character.",
     description: "Amber is positioned as a premium heat-not-burn tobacco stick option for adult-market business enquiries. The product is suitable for brand catalogues, importer discussions and private label programmes where a warm, classic tobacco direction is required.",
     flavourProfile: ["High aroma", "Medium bodied", "Hint of cocoa"],
     highlights: ["Bulk manufacturing enquiry", "OEM and private label suitable", "Adult-market B2B information", "Packaging customisation available"]
@@ -58,7 +58,7 @@ export const products: Product[] = [
     categoryLabel: "Tobacco sticks",
     badge: "Tobacco range",
     accent: "blue",
-    shortDescription: "A fresh tobacco stick direction with a cool menthol-style profile for authorised business channels.",
+    shortDescription: "Fresh tobacco profile with a cool, clean menthol-style finish.",
     description: "Blue is designed for business partners seeking a fresh tobacco stick option within a manufacturer-led HNB product range. It is presented for bulk enquiry, catalogue review and private label discussion.",
     flavourProfile: ["Fresh aroma", "Medium bodied", "Menthol experience"],
     highlights: ["Suitable for bulk quote", "Custom branding option", "Category page ready", "B2B product information"]
@@ -70,7 +70,7 @@ export const products: Product[] = [
     categoryLabel: "Tobacco sticks",
     badge: "Tobacco range",
     accent: "silver",
-    shortDescription: "A balanced tobacco stick profile with smooth aroma and refined presentation.",
+    shortDescription: "Balanced tobacco profile with smooth aroma and refined character.",
     description: "Silver is positioned as a balanced heat-not-burn tobacco stick option for business buyers requiring a clean and premium product direction. Suitable for OEM discussions and market-specific catalogue development.",
     flavourProfile: ["Balanced aroma", "Medium bodied", "Hints of spice and vanilla"],
     highlights: ["Premium catalogue positioning", "Bulk manufacturing quote", "Private label compatible", "Responsible B2B content"]
@@ -83,7 +83,7 @@ export const products: Product[] = [
     categoryLabel: "Tobacco sticks",
     badge: "Tobacco range",
     accent: "red",
-    shortDescription: "A rounded classic tobacco profile for B2B product range development.",
+    shortDescription: "Rounded classic tobacco profile with a familiar, full-bodied character.",
     description: "Tobacco is the classic option in the range, suitable for business partners who require a familiar tobacco-led flavour direction for adult-market distribution subject to local regulations.",
     flavourProfile: ["Rounded aroma", "Medium bodied", "Deep tobacco"],
     highlights: ["Classic product positioning", "Bulk quote flow", "Private label ready", "Adult-only content"]
@@ -95,7 +95,7 @@ export const products: Product[] = [
     categoryLabel: "Tobacco sticks",
     badge: "Tobacco range",
     accent: "purple",
-    shortDescription: "A berry-led tobacco stick profile for business range differentiation.",
+    shortDescription: "Berry-led tobacco profile with a distinctive blueberry aroma.",
     description: "Blueberry is a flavoured tobacco stick option for authorised adult-market B2B enquiries. The product page supports selected product quote requests and market-specific follow-up.",
     flavourProfile: ["High aroma", "Full bodied", "Blueberry aroma"],
     highlights: ["Flavoured category option", "Bulk quote enabled", "Importer enquiry support", "Custom packaging possible"]
@@ -108,7 +108,7 @@ export const products: Product[] = [
     categoryLabel: "Tobacco sticks",
     badge: "Tobacco range",
     accent: "cream",
-    shortDescription: "A smooth vanilla-inspired tobacco stick profile for catalogue consideration.",
+    shortDescription: "Smooth tobacco profile with a soft, warm vanilla direction.",
     description: "Vanilla is included as a smooth flavour direction for authorised business partners seeking a broader product portfolio under OEM or branded packaging discussions.",
     flavourProfile: ["Smooth aroma", "Soft body", "Vanilla direction"],
     highlights: ["Bulk enquiry", "Flavour range support", "Custom branding", "Request-to-quote page"]
@@ -120,7 +120,7 @@ export const products: Product[] = [
     categoryLabel: "Tobacco sticks",
     badge: "Tobacco range",
     accent: "green",
-    shortDescription: "A cool menthol tobacco stick flavour with a clean, refreshing finish.",
+    shortDescription: "Cool menthol tobacco flavour with a clean, refreshing finish.",
     description: "Menthol is a tobacco stick option with a clear, cooling flavour direction for authorised adult-market business enquiries and private label programmes.",
     flavourProfile: ["Cool menthol aroma", "Clean, balanced body", "Refreshing finish"],
     highlights: ["Bulk manufacturing enquiry", "OEM and private label suitable", "Adult-market B2B information", "Packaging customisation available"]
@@ -205,7 +205,7 @@ export const products: Product[] = [
     categoryLabel: "Devices",
     badge: "Device enquiry",
     accent: "blue",
-    shortDescription: "Device category enquiry for business partners requiring compatible HNB product programmes.",
+    shortDescription: "Compatible device options for complete HNB product programmes.",
     description: "The HNB Device Programme page is designed for business clients who want to discuss compatible device options as part of a larger HNB product supply or brand programme.",
     highlights: ["Device category enquiry", "Bulk programme discussion", "Compatible product planning", "Quote request option"]
   },
@@ -216,7 +216,7 @@ export const products: Product[] = [
     categoryLabel: "Custom branding",
     badge: "OEM service",
     accent: "violet",
-    shortDescription: "Custom packaging and private label support for HNB business partners.",
+    shortDescription: "Custom packaging and private-label support for HNB brands.",
     description: "Private Label Packaging supports brand owners and business buyers seeking customised product presentation, business proposal support and packaging direction for adult-market HNB categories.",
     highlights: ["Custom packaging direction", "Brand owner enquiry", "OEM support", "Manufacturing quote option"]
   }

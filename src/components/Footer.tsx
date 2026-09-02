@@ -9,8 +9,9 @@ export default function Footer() {
             alt="KOKEN International FZ-LLC logo"
           />
           <p>
-            KOKEN International FZ-LLC is positioned as a licensed heat-not-burn
-            manufacturer for bulk, OEM and private label B2B enquiries.
+            KOKEN International FZ-LLC is the official patent and licence holder
+            for HNB production in the UAE, supporting granules manufacturing,
+            bulk supply, OEM and private-label programmes for global B2B buyers.
           </p>
         </div>
         <div>
@@ -24,6 +25,7 @@ export default function Footer() {
           <h3>Business enquiries</h3>
           <Link href="/quote">Request manufacturing quote</Link>
           <a href="mailto:sales@koken-inc.cn">sales@koken-inc.cn</a>
+          <a href="mailto:info@koken-inc.cn">info@koken-inc.cn</a>
           <a href="https://wa.me/971565053048">+971 56 505 3048</a>
           <a
             href="https://www.linkedin.com/company/kokenstick?originalSubdomain=ae"
@@ -41,8 +43,9 @@ export default function Footer() {
             Ras Al Khaimah, United Arab Emirates
           </p>
           <p>
-            Adult product information only. For lawful B2B bulk enquiries, OEM
-            and private label discussions.
+            KOKEN International FZ-LLC<br />
+            UAE-based HNB production and granules manufacturing for lawful
+            international B2B enquiries.
           </p>
         </div>
       </div>

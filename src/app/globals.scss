@@ -834,14 +834,21 @@ textarea {
   aspect-ratio: auto;
 }
 .productCard .thumbnailImageWrap {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: auto;
   place-items: center;
 }
 .productCard .thumbnailImageWrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: none;
   object-position: center center;
   object-fit: contain;
   transform: none;
-  width: 100%;
-  height: auto;
 }
 .productCard.tobacco .thumbnailImageWrap img {
   object-fit: contain;
@@ -849,7 +856,7 @@ textarea {
   transform: none;
 }
 .productCard.tobacco .thumbnailImageWrap {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: auto;
   height: auto;
   min-height: 0;
   overflow: hidden;
@@ -857,7 +864,7 @@ textarea {
 }
 .productCard.tobacco .thumbnailImageWrap img {
   width: 100%;
-  height: 100%;
+  height: auto;
   max-height: none;
   object-fit: contain;
 }
