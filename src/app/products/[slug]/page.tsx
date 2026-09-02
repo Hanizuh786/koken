@@ -35,7 +35,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     name: product.name,
     category: product.categoryLabel,
     description: product.shortDescription,
-    image: `/images/products/${product.slug}.png`,
+    image: product.category === "herbal"
+      ? `/images/products/herbal/${product.slug.replace("-herbal-sticks", "")}.png`
+      : `/images/products/${product.slug}.png`,
     brand: { "@type": "Brand", name: "KOKEN International FZ-LLC" },
     offers: {
       "@type": "Offer",

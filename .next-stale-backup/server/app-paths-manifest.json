@@ -1,0 +1,7 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/tobacco-sticks/page": "app/tobacco-sticks/page.js",
+  "/page": "app/page.js",
+  "/products/[slug]/page": "app/products/[slug]/page.js",
+  "/herbal-sticks/page": "app/herbal-sticks/page.js"
+}

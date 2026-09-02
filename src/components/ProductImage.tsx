@@ -5,7 +5,9 @@ import type { Product } from "@/data/products";
 
 export default function ProductImage({ product, size = "card" }: { product: Product; size?: "card" | "detail" }) {
   const [failed, setFailed] = useState(false);
-  const imagePath = `/images/products/${product.slug}.png`;
+  const imagePath = product.category === "herbal"
+    ? `/images/products/herbal/${product.slug.replace("-herbal-sticks", "")}.png`
+    : `/images/products/${product.slug}.png`;
 
   if (failed) {
     return (

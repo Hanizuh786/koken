@@ -16,13 +16,13 @@ export type Product = {
 export const products: Product[] = [
   {
     slug: "bronzy-tobacco-sticks",
-    name: "Bronzy",
+    name: "Amber",
     category: "tobacco",
     categoryLabel: "Tobacco sticks",
     badge: "Tobacco range",
     accent: "bronze",
     shortDescription: "A rich tobacco stick profile with warm aroma and refined character for bulk B2B enquiries.",
-    description: "Bronzy is positioned as a premium heat-not-burn tobacco stick option for adult-market business enquiries. The product is suitable for brand catalogues, importer discussions and private label programmes where a warm, classic tobacco direction is required.",
+    description: "Amber is positioned as a premium heat-not-burn tobacco stick option for adult-market business enquiries. The product is suitable for brand catalogues, importer discussions and private label programmes where a warm, classic tobacco direction is required.",
     flavourProfile: ["High aroma", "Medium bodied", "Hint of cocoa"],
     highlights: ["Bulk manufacturing enquiry", "OEM and private label suitable", "Adult-market B2B information", "Packaging customisation available"]
   },
@@ -50,18 +50,7 @@ export const products: Product[] = [
     flavourProfile: ["Balanced aroma", "Medium bodied", "Hints of spice and vanilla"],
     highlights: ["Premium catalogue positioning", "Bulk manufacturing quote", "Private label compatible", "Responsible B2B content"]
   },
-  {
-    slug: "menthol-tobacco-sticks",
-    name: "Menthol",
-    category: "tobacco",
-    categoryLabel: "Tobacco sticks",
-    badge: "Tobacco range",
-    accent: "teal",
-    shortDescription: "A cooling tobacco stick profile for adult-market business catalogues.",
-    description: "Menthol is intended for buyers seeking a cool tobacco direction within an HNB stick range. The page supports quote requests rather than retail checkout.",
-    flavourProfile: ["Balanced aroma", "Medium bodied", "Cool mint leaves"],
-    highlights: ["Quote request enabled", "Bulk enquiry only", "OEM packaging discussion", "Manufacturer positioning"]
-  },
+  
   {
     slug: "tobacco-classic-sticks",
     name: "Tobacco",
@@ -86,18 +75,7 @@ export const products: Product[] = [
     flavourProfile: ["High aroma", "Full bodied", "Blueberry aroma"],
     highlights: ["Flavoured category option", "Bulk quote enabled", "Importer enquiry support", "Custom packaging possible"]
   },
-  {
-    slug: "green-tobacco-sticks",
-    name: "Green",
-    category: "tobacco",
-    categoryLabel: "Tobacco sticks",
-    badge: "Tobacco range",
-    accent: "green",
-    shortDescription: "A green-profile tobacco stick option for differentiated manufacturing enquiries.",
-    description: "Green provides an additional flavour direction for business buyers reviewing a complete HNB tobacco stick portfolio for bulk or private label opportunities.",
-    flavourProfile: ["Green character", "Smooth body", "Fresh finish"],
-    highlights: ["Range extension option", "B2B enquiry flow", "Bulk manufacturing", "Private label packaging support"]
-  },
+  
   {
     slug: "vanilla-tobacco-sticks",
     name: "Vanilla",
@@ -122,89 +100,78 @@ export const products: Product[] = [
     flavourProfile: ["Deep profile", "Rounded body", "Distinct finish"],
     highlights: ["Manufacturer-led enquiry", "Bulk volume discussion", "Product catalogue ready", "OEM support"]
   },
+  
   {
-    slug: "yellow-tobacco-sticks",
-    name: "Yellow",
-    category: "tobacco",
-    categoryLabel: "Tobacco sticks",
-    badge: "Tobacco range",
-    accent: "yellow",
-    shortDescription: "A bright tobacco stick option for product range variety.",
-    description: "Yellow gives business buyers another portfolio option for adult-market HNB discussions and quote requests, subject to local market requirements.",
-    flavourProfile: ["Bright profile", "Balanced body", "Smooth finish"],
-    highlights: ["B2B quote option", "Bulk enquiry", "Catalogue product", "Private label discussion"]
+    slug: "grapeel-herbal-sticks",
+    name: "Grapeel",
+    category: "herbal",
+    categoryLabel: "Herbal sticks",
+    badge: "Herbal range",
+    accent: "grapeel",
+    shortDescription: "Bright grapefruit peel with vibrant zest, natural bitterness and a clean, refreshing finish.",
+    description: "Grapeel is a tobacco-free and nicotine-free herbal stick flavour inspired by fresh grapefruit peel. Its citrus-led profile balances lively zest with a touch of natural bitterness and a clean finish.",
+    flavourProfile: ["Vibrant grapefruit zest", "Touch of natural bitterness", "Clean, refreshing finish"],
+    highlights: ["0 nicotine", "No tobacco extract", "Tobacco-free herbal sticks", "Bulk and private label enquiries"]
   },
   {
     slug: "blueberry-herbal-sticks",
-    name: "Blueberry Herbal",
+    name: "Blueberry",
     category: "herbal",
     categoryLabel: "Herbal sticks",
     badge: "Herbal range",
-    accent: "purple",
-    shortDescription: "A nicotine-free herbal stick option with a blueberry flavour direction.",
-    description: "Blueberry Herbal is a tobacco-free and nicotine-free herbal stick option for adult-market business enquiries. It supports product range diversification for authorised B2B partners.",
-    flavourProfile: ["Herbal sticks", "Blueberry profile", "Smooth experience"],
-    highlights: ["Nicotine-free product direction", "Bulk enquiry", "Private label option", "Herbal category page"]
+    accent: "blueberry",
+    shortDescription: "A sweet, fruity blueberry flavour with a smooth berry-led character.",
+    description: "Blueberry is a tobacco-free and nicotine-free herbal stick flavour with a naturally sweet, fruity berry direction and a smooth finish.",
+    flavourProfile: ["Sweet blueberry", "Fruity berry character", "Smooth finish"],
+    highlights: ["0 nicotine", "No tobacco extract", "Tobacco-free herbal sticks", "Bulk and private label enquiries"]
   },
   {
-    slug: "tomentose-pummelo-peel-herbal-sticks",
-    name: "Tomentose Pummelo Peel",
+    slug: "peppermint-herbal-sticks",
+    name: "Peppermint",
     category: "herbal",
     categoryLabel: "Herbal sticks",
     badge: "Herbal range",
-    accent: "olive",
-    shortDescription: "A nicotine-free herbal stick option with pummelo peel profile.",
-    description: "Tomentose Pummelo Peel Herbal is positioned as a distinctive nicotine-free herbal stick option for business buyers seeking alternative flavour profiles.",
-    flavourProfile: ["Nicotine-free", "Herbal sticks", "Pummelo peel profile"],
-    highlights: ["Unique herbal profile", "Bulk quote request", "B2B product information", "Custom brand discussion"]
-  },
-  {
-    slug: "strawberry-herbal-sticks",
-    name: "Strawberry Herbal",
-    category: "herbal",
-    categoryLabel: "Herbal sticks",
-    badge: "Herbal range",
-    accent: "red",
-    shortDescription: "A nicotine-free herbal stick option with strawberry profile.",
-    description: "Strawberry Herbal is designed for B2B product range enquiries where a fruit-led nicotine-free herbal option is required.",
-    flavourProfile: ["Herbal sticks", "Strawberry profile", "Smooth experience"],
-    highlights: ["Herbal portfolio option", "Bulk enquiry", "Private label compatible", "Quote option included"]
-  },
-  {
-    slug: "mint-herbal-sticks",
-    name: "Mint Herbal",
-    category: "herbal",
-    categoryLabel: "Herbal sticks",
-    badge: "Herbal range",
-    accent: "teal",
-    shortDescription: "A nicotine-free herbal stick option with mint direction.",
-    description: "Mint Herbal is a cool-profile herbal stick option for adult-market business catalogues and OEM discussions.",
-    flavourProfile: ["Nicotine-free", "Herbal sticks", "Mint profile"],
-    highlights: ["Fresh herbal direction", "Bulk manufacturing enquiry", "Custom branding", "Quote page ready"]
+    accent: "peppermint",
+    shortDescription: "A smooth, moderate mint flavour that refreshes without becoming overly bitter.",
+    description: "Peppermint is a tobacco-free and nicotine-free herbal stick flavour with a balanced mint character. It is refreshing and clean while staying smooth and moderate.",
+    flavourProfile: ["Smooth peppermint", "Moderate mint intensity", "Refreshing, clean finish"],
+    highlights: ["0 nicotine", "No tobacco extract", "Tobacco-free herbal sticks", "Bulk and private label enquiries"]
   },
   {
     slug: "mango-herbal-sticks",
-    name: "Mango Herbal",
+    name: "Mango",
     category: "herbal",
     categoryLabel: "Herbal sticks",
     badge: "Herbal range",
-    accent: "yellow",
-    shortDescription: "A nicotine-free herbal stick option with mango flavour direction.",
-    description: "Mango Herbal supports business buyers looking for a fruit-led nicotine-free herbal category option for market-specific product planning.",
-    flavourProfile: ["Herbal sticks", "Mango profile", "Smooth experience"],
-    highlights: ["Herbal flavour option", "B2B bulk enquiry", "Private label packaging", "Manufacturer quote"]
+    accent: "mango",
+    shortDescription: "A tropical, sweet mango flavour with a warm, juicy fruit character.",
+    description: "Mango is a tobacco-free and nicotine-free herbal stick flavour inspired by ripe tropical fruit, with a sweet, juicy and inviting profile.",
+    flavourProfile: ["Sweet tropical mango", "Juicy fruit character", "Warm, smooth finish"],
+    highlights: ["0 nicotine", "No tobacco extract", "Tobacco-free herbal sticks", "Bulk and private label enquiries"]
   },
   {
     slug: "coffee-herbal-sticks",
-    name: "Coffee Herbal",
+    name: "Coffee",
     category: "herbal",
     categoryLabel: "Herbal sticks",
     badge: "Herbal range",
     accent: "coffee",
-    shortDescription: "A nicotine-free herbal stick option with coffee profile.",
-    description: "Coffee Herbal is a distinctive herbal stick direction for B2B buyers seeking a warm, alternative flavour presentation.",
-    flavourProfile: ["Herbal sticks", "Coffee profile", "Smooth experience"],
-    highlights: ["Distinctive herbal range", "Bulk quote", "Private label option", "Adult-market B2B information"]
+    shortDescription: "A rich coffee flavour with a smooth roasted taste and warm aromatic depth.",
+    description: "Coffee is a tobacco-free and nicotine-free herbal stick flavour with a rich roasted profile, smooth body and warm aromatic finish.",
+    flavourProfile: ["Rich coffee aroma", "Smooth roasted taste", "Warm finish"],
+    highlights: ["0 nicotine", "No tobacco extract", "Tobacco-free herbal sticks", "Bulk and private label enquiries"]
+  },
+  {
+    slug: "lemon-herbal-sticks",
+    name: "Lemon",
+    category: "herbal",
+    categoryLabel: "Herbal sticks",
+    badge: "Herbal range",
+    accent: "lemon",
+    shortDescription: "A fresh, tangy lemon flavour with a bright citrus finish.",
+    description: "Lemon is a tobacco-free and nicotine-free herbal stick flavour with a bright, fresh citrus profile and a lively tangy finish.",
+    flavourProfile: ["Fresh lemon", "Bright citrus aroma", "Tangy finish"],
+    highlights: ["0 nicotine", "No tobacco extract", "Tobacco-free herbal sticks", "Bulk and private label enquiries"]
   },
   {
     slug: "hnb-device-programme",
