@@ -133,7 +133,7 @@ export const products: Product[] = [
     categoryLabel: "Herbal sticks",
     badge: "Herbal range",
     accent: "grapeel",
-    shortDescription: "Bright grapefruit peel with vibrant zest, natural bitterness and a clean, refreshing finish.",
+    shortDescription: "Bright grapefruit peel with vibrant zest and a clean finish.",
     description: "Grapeel is a tobacco-free and nicotine-free herbal stick flavour inspired by fresh grapefruit peel. Its citrus-led profile balances lively zest with a touch of natural bitterness and a clean finish.",
     flavourProfile: ["Vibrant grapefruit zest", "Touch of natural bitterness", "Clean, refreshing finish"],
     highlights: ["0 nicotine", "No tobacco extract", "Tobacco-free herbal sticks", "Bulk and private label enquiries"]
@@ -145,7 +145,7 @@ export const products: Product[] = [
     categoryLabel: "Herbal sticks",
     badge: "Herbal range",
     accent: "blueberry",
-    shortDescription: "A sweet, fruity blueberry flavour with a smooth berry-led character.",
+    shortDescription: "Sweet blueberry flavour with a smooth, fruity berry character.",
     description: "Blueberry is a tobacco-free and nicotine-free herbal stick flavour with a naturally sweet, fruity berry direction and a smooth finish.",
     flavourProfile: ["Sweet blueberry", "Fruity berry character", "Smooth finish"],
     highlights: ["0 nicotine", "No tobacco extract", "Tobacco-free herbal sticks", "Bulk and private label enquiries"]
@@ -157,7 +157,7 @@ export const products: Product[] = [
     categoryLabel: "Herbal sticks",
     badge: "Herbal range",
     accent: "peppermint",
-    shortDescription: "A smooth, moderate mint flavour that refreshes without becoming overly bitter.",
+    shortDescription: "Smooth, moderate peppermint flavour with a clean finish.",
     description: "Peppermint is a tobacco-free and nicotine-free herbal stick flavour with a balanced mint character. It is refreshing and clean while staying smooth and moderate.",
     flavourProfile: ["Smooth peppermint", "Moderate mint intensity", "Refreshing, clean finish"],
     highlights: ["0 nicotine", "No tobacco extract", "Tobacco-free herbal sticks", "Bulk and private label enquiries"]
@@ -169,7 +169,7 @@ export const products: Product[] = [
     categoryLabel: "Herbal sticks",
     badge: "Herbal range",
     accent: "mango",
-    shortDescription: "A tropical, sweet mango flavour with a warm, juicy fruit character.",
+    shortDescription: "Sweet tropical mango flavour with a warm, juicy character.",
     description: "Mango is a tobacco-free and nicotine-free herbal stick flavour inspired by ripe tropical fruit, with a sweet, juicy and inviting profile.",
     flavourProfile: ["Sweet tropical mango", "Juicy fruit character", "Warm, smooth finish"],
     highlights: ["0 nicotine", "No tobacco extract", "Tobacco-free herbal sticks", "Bulk and private label enquiries"]
@@ -181,7 +181,7 @@ export const products: Product[] = [
     categoryLabel: "Herbal sticks",
     badge: "Herbal range",
     accent: "coffee",
-    shortDescription: "A rich coffee flavour with a smooth roasted taste and warm aromatic depth.",
+    shortDescription: "Rich coffee flavour with a smooth roasted taste and warm finish.",
     description: "Coffee is a tobacco-free and nicotine-free herbal stick flavour with a rich roasted profile, smooth body and warm aromatic finish.",
     flavourProfile: ["Rich coffee aroma", "Smooth roasted taste", "Warm finish"],
     highlights: ["0 nicotine", "No tobacco extract", "Tobacco-free herbal sticks", "Bulk and private label enquiries"]
@@ -193,7 +193,7 @@ export const products: Product[] = [
     categoryLabel: "Herbal sticks",
     badge: "Herbal range",
     accent: "lemon",
-    shortDescription: "A fresh, tangy lemon flavour with a bright citrus finish.",
+    shortDescription: "Fresh, tangy lemon flavour with a bright citrus finish.",
     description: "Lemon is a tobacco-free and nicotine-free herbal stick flavour with a bright, fresh citrus profile and a lively tangy finish.",
     flavourProfile: ["Fresh lemon", "Bright citrus aroma", "Tangy finish"],
     highlights: ["0 nicotine", "No tobacco extract", "Tobacco-free herbal sticks", "Bulk and private label enquiries"]
