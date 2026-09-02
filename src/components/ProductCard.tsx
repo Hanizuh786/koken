@@ -5,7 +5,7 @@ import ProductImage from "./ProductImage";
 
 export default function ProductCard({ product }: { product: Product }) {
   return (
-    <article className={`productCard ${product.accent}`}>
+    <article className={`productCard ${product.category} ${product.accent}`}>
       <ProductImage product={product} />
       <span className="tag">{product.badge}</span>
       <h3>{product.name}</h3>

@@ -8,8 +8,20 @@ const Context = createContext<RfqContext | null>(null);
 
 export function RfqProvider({ children }: { children: React.ReactNode }) {
   const [items, setItems] = useState<RfqItem[]>([]);
-  useEffect(() => { setItems(JSON.parse(localStorage.getItem("koken_rfq_items") || "[]")); }, []);
-  useEffect(() => { localStorage.setItem("koken_rfq_items", JSON.stringify(items)); }, [items]);
+  const [hydrated, setHydrated] = useState(false);
+  useEffect(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem("koken_rfq_items") || "[]");
+      setItems(Array.isArray(saved) ? saved : []);
+    } catch {
+      setItems([]);
+    } finally {
+      setHydrated(true);
+    }
+  }, []);
+  useEffect(() => {
+    if (hydrated) localStorage.setItem("koken_rfq_items", JSON.stringify(items));
+  }, [hydrated, items]);
   const addItem = (product: Product) => setItems(prev => {
     const found = prev.find(item => item.slug === product.slug);
     if (found) return prev.map(item => item.slug === product.slug ? { ...item, quantity: item.quantity + 1 } : item);

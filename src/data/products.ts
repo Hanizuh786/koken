@@ -13,9 +13,34 @@ export type Product = {
   accent: string;
 };
 
+const tobaccoDetailArtwork: Record<string, string> = {
+  "amber-tobacco-sticks": "amber-bronzy.png",
+  "blue-tobacco-sticks": "blue-blue.png",
+  "silver-tobacco-sticks": "silver-silver.png",
+  "tobacco-classic-sticks": "tobacco-red.png",
+  "blueberry-tobacco-sticks": "blueberry.png",
+  "vanilla-tobacco-sticks": "vanilla-creamy.png",
+  "menthol-tobacco-sticks": "menthol-green.png",
+};
+
+export const getProductImagePath = (product: Product, size: "card" | "detail") => {
+  if (product.category === "herbal") {
+    const flavourKey = product.slug.replace("-herbal-sticks", "");
+    return size === "detail"
+      ? `/images/products/herbal/${flavourKey}.png`
+      : `/images/products/herbal/thumbnails/${flavourKey}.png`;
+  }
+
+  if (product.category === "tobacco") {
+    return `/images/products/${tobaccoDetailArtwork[product.slug] ?? `${product.slug}.png`}`;
+  }
+
+  return `/images/products/${product.slug}.png`;
+};
+
 export const products: Product[] = [
   {
-    slug: "bronzy-tobacco-sticks",
+    slug: "amber-tobacco-sticks",
     name: "Amber",
     category: "tobacco",
     categoryLabel: "Tobacco sticks",
@@ -57,7 +82,7 @@ export const products: Product[] = [
     category: "tobacco",
     categoryLabel: "Tobacco sticks",
     badge: "Tobacco range",
-    accent: "darkbrown",
+    accent: "red",
     shortDescription: "A rounded classic tobacco profile for B2B product range development.",
     description: "Tobacco is the classic option in the range, suitable for business partners who require a familiar tobacco-led flavour direction for adult-market distribution subject to local regulations.",
     flavourProfile: ["Rounded aroma", "Medium bodied", "Deep tobacco"],
@@ -82,23 +107,23 @@ export const products: Product[] = [
     category: "tobacco",
     categoryLabel: "Tobacco sticks",
     badge: "Tobacco range",
-    accent: "gold",
+    accent: "cream",
     shortDescription: "A smooth vanilla-inspired tobacco stick profile for catalogue consideration.",
     description: "Vanilla is included as a smooth flavour direction for authorised business partners seeking a broader product portfolio under OEM or branded packaging discussions.",
     flavourProfile: ["Smooth aroma", "Soft body", "Vanilla direction"],
     highlights: ["Bulk enquiry", "Flavour range support", "Custom branding", "Request-to-quote page"]
   },
   {
-    slug: "haze-tobacco-sticks",
-    name: "Haze",
+    slug: "menthol-tobacco-sticks",
+    name: "Menthol",
     category: "tobacco",
     categoryLabel: "Tobacco sticks",
     badge: "Tobacco range",
-    accent: "brown",
-    shortDescription: "A deeper tobacco stick variation for market-specific product discussions.",
-    description: "Haze is presented as a differentiated tobacco stick option for bulk product enquiries, distributor catalogue planning and private label development.",
-    flavourProfile: ["Deep profile", "Rounded body", "Distinct finish"],
-    highlights: ["Manufacturer-led enquiry", "Bulk volume discussion", "Product catalogue ready", "OEM support"]
+    accent: "green",
+    shortDescription: "A cool menthol tobacco stick flavour with a clean, refreshing finish.",
+    description: "Menthol is a tobacco stick option with a clear, cooling flavour direction for authorised adult-market business enquiries and private label programmes.",
+    flavourProfile: ["Cool menthol aroma", "Clean, balanced body", "Refreshing finish"],
+    highlights: ["Bulk manufacturing enquiry", "OEM and private label suitable", "Adult-market B2B information", "Packaging customisation available"]
   },
   
   {
