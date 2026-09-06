@@ -24,8 +24,8 @@ export default function Footer() {
         <div>
           <h3>Business enquiries</h3>
           <Link href="/quote">Request manufacturing quote</Link>
+          
           <a href="mailto:sales@koken-inc.cn">sales@koken-inc.cn</a>
-          <a href="mailto:info@koken-inc.cn">info@koken-inc.cn</a>
           <a href="https://wa.me/971565053048">+971 56 505 3048</a>
           <a
             href="https://www.linkedin.com/company/kokenstick?originalSubdomain=ae"
