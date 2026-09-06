@@ -133,7 +133,7 @@ export const products: Product[] = [
     categoryLabel: "Herbal sticks",
     badge: "Herbal range",
     accent: "grapeel",
-    shortDescription: "Bright grapefruit peel with vibrant zest and a clean finish.",
+    shortDescription: "Premium dried grapefruit peel offering a vibrant citrus aroma, refreshing zest, and a smooth, clean finish.",
     description: "Grapeel is a tobacco-free and nicotine-free herbal stick flavour inspired by fresh grapefruit peel. Its citrus-led profile balances lively zest with a touch of natural bitterness and a clean finish.",
     flavourProfile: ["Vibrant grapefruit zest", "Touch of natural bitterness", "Clean, refreshing finish"],
     highlights: ["0 nicotine", "No tobacco extract", "Tobacco-free herbal sticks", "Bulk and private label enquiries"]
