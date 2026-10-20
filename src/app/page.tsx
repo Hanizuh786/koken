@@ -1,7 +1,9 @@
 import Link from "next/link";
+import BlogCard from "@/components/BlogCard";
 import Faq from "@/components/Faq";
 import ProductCard from "@/components/ProductCard";
 import { getProductsByCategory } from "@/data/products";
+import { blogPosts } from "@/data/blog";
 import { generalFaqs } from "@/data/faqs";
 
 export const metadata = { alternates: { canonical: "/" } };
@@ -21,6 +23,7 @@ export default function Home() {
       <section className="sectionPad productBand"><div className="sectionHead"><p className="eyebrow">Tobacco stick range</p><h2>Selected tobacco stick flavours for B2B product planning.</h2><p><Link href="/tobacco-sticks">View all 7 tobacco stick flavours</Link></p></div><div className="productGrid">{tobacco.map(p => <ProductCard key={p.slug} product={p} />)}</div></section>
       <section className="sectionPad productBand lightGreen"><div className="sectionHead"><p className="eyebrow">Tobacco-free herbal range</p><h2>Flavour-led herbal stick options.</h2><p><Link href="/herbal-sticks">View all 6 herbal stick flavours</Link></p></div><div className="productGrid">{herbal.map(p => <ProductCard key={p.slug} product={p} />)}</div></section>
       <section className="sectionPad"><div className="sectionHead"><p className="eyebrow">Why KOKEN</p><h2>A UAE manufacturing partner for international enquiries.</h2><p>KOKEN International FZ-LLC brings product selection, granules manufacturing and brand development into one B2B conversation. Submit your target market, estimated volume and packaging requirements for a focused response from the sales team. <Link href="/about">Learn more about KOKEN</Link>.</p></div><div className="heroPanel"><div><strong>Based in Ras Al Khaimah, United Arab Emirates</strong><span>Supporting lawful business enquiries across international markets.</span></div><div><strong>From product direction to packaging</strong><span>Discuss flavours, formats, OEM requirements and private-label presentation.</span></div></div></section>
+      <section className="sectionPad"><div className="sectionHead"><p className="eyebrow">HNB guides</p><h2>Latest from the KOKEN blog.</h2><p>Practical guides on heat-not-burn products, manufacturing and market entry. <Link href="/blog">Read all {blogPosts.length} guides</Link>.</p></div><div className="blogGrid">{blogPosts.slice(0, 3).map(post => <BlogCard key={post.slug} post={post} />)}</div></section>
       <Faq items={generalFaqs.slice(0, 5)} title="KOKEN HNB manufacturing FAQ" />
     </main>
   );

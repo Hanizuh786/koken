@@ -1,3 +1,4 @@
+import { blogPosts } from "@/data/blog";
 import { generalFaqs } from "@/data/faqs";
 import { getProductFullName, getProductsByCategory } from "@/data/products";
 import { absoluteUrl, company } from "@/lib/site";
@@ -39,6 +40,7 @@ KOKEN sells business-to-business only (brand owners, importers, wholesalers, ret
 - [Devices](${absoluteUrl("/devices")}): Compatible HNB device programme support
 - [Request a quote](${absoluteUrl("/quote")}): B2B enquiry form
 - [Contact](${absoluteUrl("/contact")}): Email, phone and location
+- [Blog](${absoluteUrl("/blog")}): HNB guides on manufacturing, OEM and market entry
 
 ## Tobacco sticks
 
@@ -47,6 +49,10 @@ ${list("tobacco")}
 ## Herbal sticks
 
 ${list("herbal")}
+
+## Guides (blog)
+
+${blogPosts.map((post) => `- [${post.title}](${absoluteUrl(`/blog/${post.slug}`)}): ${post.description}`).join("\n")}
 
 ## FAQ
 
