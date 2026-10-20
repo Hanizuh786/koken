@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 // Every quote enquiry is delivered to both inboxes.
-const RECIPIENTS = ["sales@koken-inc.cn", "hanya@koken-inc.cn"];
+const RECIPIENTS = ["sales@koken-inc.cn", "info@koken-inc.cn", "hanya@koken-inc.cn"];
 function clean(value: unknown) { return String(value || "").replace(/[<>]/g, "").trim(); }
 export async function POST(req: Request) {
  try {
