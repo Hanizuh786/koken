@@ -11,8 +11,8 @@ export function GET() {
     .map(
       (post) => `    <item>
       <title>${escape(post.title)}</title>
-      <link>${absoluteUrl(`/blog/${post.slug}`)}</link>
-      <guid>${absoluteUrl(`/blog/${post.slug}`)}</guid>
+      <link>${absoluteUrl(`/insights/${post.slug}`)}</link>
+      <guid>${absoluteUrl(`/insights/${post.slug}`)}</guid>
       <pubDate>${new Date(`${post.published}T00:00:00Z`).toUTCString()}</pubDate>
       <category>${escape(post.category)}</category>
       <description>${escape(post.description)}</description>
@@ -22,8 +22,8 @@ export function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>${escape(company.shortName)} HNB Industry Blog</title>
-    <link>${absoluteUrl("/blog")}</link>
+    <title>${escape(company.shortName)} Insights</title>
+    <link>${absoluteUrl("/insights")}</link>
     <description>Guides on heat-not-burn products, manufacturing, OEM and market entry from ${escape(company.name)}.</description>
     <language>en</language>
 ${items}

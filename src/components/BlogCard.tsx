@@ -10,7 +10,7 @@ export default function BlogCard({ post, headingLevel = "h3" }: { post: BlogPost
     <article className="blogCard">
       <span className="tag">{post.category}</span>
       <Heading>
-        <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+        <Link href={`/insights/${post.slug}`}>{post.title}</Link>
       </Heading>
       <p>{post.description}</p>
       <p className="blogMeta">

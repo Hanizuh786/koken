@@ -40,7 +40,7 @@ KOKEN sells business-to-business only (brand owners, importers, wholesalers, ret
 - [Devices](${absoluteUrl("/devices")}): Compatible HNB device programme support
 - [Request a quote](${absoluteUrl("/quote")}): B2B enquiry form
 - [Contact](${absoluteUrl("/contact")}): Email, phone and location
-- [Blog](${absoluteUrl("/blog")}): HNB guides on manufacturing, OEM and market entry
+- [Insights](${absoluteUrl("/insights")}): HNB guides on manufacturing, OEM and market entry
 
 ## Tobacco sticks
 
@@ -50,9 +50,9 @@ ${list("tobacco")}
 
 ${list("herbal")}
 
-## Guides (blog)
+## Insights (guides)
 
-${blogPosts.map((post) => `- [${post.title}](${absoluteUrl(`/blog/${post.slug}`)}): ${post.description}`).join("\n")}
+${blogPosts.map((post) => `- [${post.title}](${absoluteUrl(`/insights/${post.slug}`)}): ${post.description}`).join("\n")}
 
 ## FAQ
 

@@ -6,12 +6,12 @@ import { absoluteUrl, company, organizationId, pageMeta } from "@/lib/site";
 
 export const metadata = {
   ...pageMeta({
-    title: "HNB Industry Blog: Manufacturing, OEM & Market Guides",
+    title: "HNB Industry Insights: Manufacturing & OEM Guides",
     description:
       "Guides from KOKEN's UAE team on heat-not-burn (HNB) products: how HNB works, granules manufacturing, OEM and private label, and entering new markets.",
-    path: "/blog",
+    path: "/insights",
   }),
-  alternates: { canonical: "/blog", types: { "application/rss+xml": "/blog/rss.xml" } },
+  alternates: { canonical: "/insights", types: { "application/rss+xml": "/insights/rss.xml" } },
 };
 
 const categories: BlogCategory[] = ["HNB basics", "Products & flavours", "Manufacturing", "OEM & private label", "Market entry"];
@@ -20,14 +20,14 @@ export default function BlogIndex() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "@id": `${absoluteUrl("/blog")}#blog`,
-    name: `${company.shortName} HNB Industry Blog`,
-    url: absoluteUrl("/blog"),
+    "@id": `${absoluteUrl("/insights")}#blog`,
+    name: `${company.shortName} Insights`,
+    url: absoluteUrl("/insights"),
     publisher: { "@id": organizationId },
     blogPost: blogPosts.map((post) => ({
       "@type": "BlogPosting",
       headline: post.title,
-      url: absoluteUrl(`/blog/${post.slug}`),
+      url: absoluteUrl(`/insights/${post.slug}`),
       datePublished: post.published,
       dateModified: post.updated ?? post.published,
     })),
@@ -37,16 +37,16 @@ export default function BlogIndex() {
     <main>
       <JsonLd data={schema} />
       <section className="pageHero sectionPad">
-        <Breadcrumbs items={[{ name: "Blog", path: "/blog" }]} />
-        <p className="eyebrow">HNB knowledge hub · {blogPosts.length} guides</p>
-        <h1>HNB industry blog.</h1>
+        <Breadcrumbs items={[{ name: "Insights", path: "/insights" }]} />
+        <p className="eyebrow">Knowledge hub · {blogPosts.length} guides</p>
+        <h1>KOKEN Insights.</h1>
         <div className="answerBox">
           <p>
             Practical guides from the KOKEN team in Ras Al Khaimah, UAE, on heat-not-burn (HNB) products, granules manufacturing, OEM
             and private-label programmes, and taking an HNB range to new markets.
           </p>
         </div>
-        <nav aria-label="Blog categories" className="blogCategoryNav">
+        <nav aria-label="Insight categories" className="blogCategoryNav">
           <ul className="tocList">
             {categories.map((category) => (
               <li key={category}>

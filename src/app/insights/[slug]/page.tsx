@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return { title: "Article not found" };
-  const meta = pageMeta({ title: post.title, description: post.description, path: `/blog/${slug}` });
+  const meta = pageMeta({ title: post.title, description: post.description, path: `/insights/${slug}` });
   return {
     ...meta,
     keywords: post.keywords,
@@ -70,7 +70,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const post = getBlogPost(slug);
   if (!post) notFound();
 
-  const url = absoluteUrl(`/blog/${slug}`);
+  const url = absoluteUrl(`/insights/${slug}`);
   const modified = post.updated ?? post.published;
   const schema = {
     "@context": "https://schema.org",
@@ -97,7 +97,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <JsonLd data={schema} />
       <article className="blogArticle">
         <header className="pageHero sectionPad">
-          <Breadcrumbs items={[{ name: "Blog", path: "/blog" }, { name: post.title, path: `/blog/${slug}` }]} />
+          <Breadcrumbs items={[{ name: "Insights", path: "/insights" }, { name: post.title, path: `/insights/${slug}` }]} />
           <p className="eyebrow">{post.category}</p>
           <h1>{post.title}</h1>
           <p className="blogMeta">
@@ -160,7 +160,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <div className="sectionHead">
           <p className="eyebrow">Keep reading</p>
           <h2>Related guides</h2>
-          <p>Browse all articles on the <Link href="/blog">KOKEN HNB blog</Link>.</p>
+          <p>Browse all guides in <Link href="/insights">KOKEN Insights</Link>.</p>
         </div>
         <div className="blogGrid">
           {getRelatedPosts(post).map((related) => <BlogCard key={related.slug} post={related} />)}

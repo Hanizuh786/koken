@@ -15,7 +15,7 @@ export const brandingPosts: BlogPost[] = [
       "**Private label** means an existing product in your packaging, and is the fastest route to market.",
       "**OEM** means a product made to your specification, giving more control but taking longer.",
       "Many brands **start with private label** and move selected SKUs to OEM later.",
-      "Both models need a clear [brief](/blog/how-to-write-an-hnb-oem-brief) and early packaging decisions.",
+      "Both models need a clear [brief](/insights/how-to-write-an-hnb-oem-brief) and early packaging decisions.",
     ],
     sections: [
       {
@@ -57,7 +57,7 @@ export const brandingPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Many brands launch with private-label SKUs, learn what sells, then develop one or two OEM products to stand apart. Planning both from the beginning with the same manufacturer keeps packaging and supply consistent. See KOKEN's [OEM and private-label programme](/custom-branding) and our step-by-step guide to [launching a private-label HNB brand](/blog/how-to-launch-a-private-label-hnb-brand).",
+            text: "Many brands launch with private-label SKUs, learn what sells, then develop one or two OEM products to stand apart. Planning both from the beginning with the same manufacturer keeps packaging and supply consistent. See KOKEN's [OEM and private-label programme](/custom-branding) and our step-by-step guide to [launching a private-label HNB brand](/insights/how-to-launch-a-private-label-hnb-brand).",
           },
         ],
       },
@@ -102,13 +102,13 @@ export const brandingPosts: BlogPost[] = [
             type: "list",
             ordered: true,
             items: [
-              "**Check the rules.** Confirm the product category is allowed, and what registration, labelling and tax apply. Use our [compliance checklist](/blog/importing-hnb-products-compliance-checklist).",
+              "**Check the rules.** Confirm the product category is allowed, and what registration, labelling and tax apply. Use our [compliance checklist](/insights/importing-hnb-products-compliance-checklist).",
               "**Define customer and channel.** Who are you selling to (distributors, retail chains, specialist stores) and which devices are used in your market?",
-              "**Choose your range.** Select flavours across different families. See [building an HNB product range](/blog/building-an-hnb-product-range).",
-              "**Brief your manufacturer.** Share market, flavours, volume and packaging needs in a structured [OEM brief](/blog/how-to-write-an-hnb-oem-brief).",
-              "**Design packaging.** Build artwork around mandatory warnings and markings. See our [packaging guide](/blog/hnb-packaging-design-guide).",
+              "**Choose your range.** Select flavours across different families. See [building an HNB product range](/insights/building-an-hnb-product-range).",
+              "**Brief your manufacturer.** Share market, flavours, volume and packaging needs in a structured [OEM brief](/insights/how-to-write-an-hnb-oem-brief).",
+              "**Design packaging.** Build artwork around mandatory warnings and markings. See our [packaging guide](/insights/hnb-packaging-design-guide).",
               "**Approve samples.** Test in the target device and sign off flavour and physical specs.",
-              "**Prepare documentation and logistics.** Agree shipping method, incoterm and import paperwork. See [shipping from the UAE](/blog/shipping-hnb-products-from-the-uae).",
+              "**Prepare documentation and logistics.** Agree shipping method, incoterm and import paperwork. See [shipping from the UAE](/insights/shipping-hnb-products-from-the-uae).",
               "**Place the first order and launch.** Size the order to your distribution plan, then support retailers with product information.",
             ],
           },
@@ -222,7 +222,7 @@ export const brandingPosts: BlogPost[] = [
               "Receive dielines (templates) for pack, carton and case.",
               "Submit artwork and check every mandatory element.",
               "Review printed or digital proofs and sign off in writing.",
-              "Keep approved proofs on file for QC of future shipments (see our [QC checklist](/blog/hnb-quality-control-checklist)).",
+              "Keep approved proofs on file for QC of future shipments (see our [QC checklist](/insights/hnb-quality-control-checklist)).",
             ],
           },
           {
@@ -308,7 +308,7 @@ export const brandingPosts: BlogPost[] = [
               "Shortlist flavours from the actual range: see [tobacco sticks](/tobacco-sticks) and [herbal sticks](/herbal-sticks).",
               "Add the products to your quote list so they arrive with the brief.",
               "Share any regulatory constraints you already know about.",
-              "If volumes are uncertain, give a range and explain your rollout plan. See [MOQ and volume planning](/blog/hnb-moq-and-volume-planning).",
+              "If volumes are uncertain, give a range and explain your rollout plan. See [MOQ and volume planning](/insights/hnb-moq-and-volume-planning).",
             ],
           },
         ],
@@ -366,7 +366,7 @@ export const brandingPosts: BlogPost[] = [
             items: [
               "Estimate monthly sell-through per channel, conservatively.",
               "Decide how many months of stock you need to cover shipping time plus a safety buffer.",
-              "Focus the launch on a few flavours across different families (see [flavour profiles](/blog/hnb-flavour-profiles-explained)).",
+              "Focus the launch on a few flavours across different families (see [flavour profiles](/insights/hnb-flavour-profiles-explained)).",
               "Check the result against the manufacturer's minimums and adjust flavours or timing.",
             ],
           },
@@ -386,7 +386,7 @@ export const brandingPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "KOKEN quotes per programme, based on market, flavours, packaging and volume. Share a volume range and rollout plan in your [OEM brief](/blog/how-to-write-an-hnb-oem-brief) and submit it through the [quote form](/quote).",
+            text: "KOKEN quotes per programme, based on market, flavours, packaging and volume. Share a volume range and rollout plan in your [OEM brief](/insights/how-to-write-an-hnb-oem-brief) and submit it through the [quote form](/quote).",
           },
         ],
       },

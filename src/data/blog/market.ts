@@ -71,7 +71,7 @@ export const marketPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Once the rules are clear, design your packaging accordingly (see our [packaging guide](/blog/hnb-packaging-design-guide)) and plan shipping (see [shipping from the UAE](/blog/shipping-hnb-products-from-the-uae)). When you send your [quote request](/quote), include your destination market so KOKEN can advise on a suitable product and packaging pathway.",
+            text: "Once the rules are clear, design your packaging accordingly (see our [packaging guide](/insights/hnb-packaging-design-guide)) and plan shipping (see [shipping from the UAE](/insights/shipping-hnb-products-from-the-uae)). When you send your [quote request](/quote), include your destination market so KOKEN can advise on a suitable product and packaging pathway.",
           },
           {
             type: "quote",
@@ -155,7 +155,7 @@ export const marketPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Expect follow-up questions about compliance, device compatibility and packaging. Having your [OEM brief](/blog/how-to-write-an-hnb-oem-brief) ready speeds this up.",
+            text: "Expect follow-up questions about compliance, device compatibility and packaging. Having your [OEM brief](/insights/how-to-write-an-hnb-oem-brief) ready speeds this up.",
           },
         ],
       },
@@ -208,7 +208,7 @@ export const marketPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Many markets require import, wholesale or tobacco trading licences. Confirm requirements with local authorities and work through our [import compliance checklist](/blog/importing-hnb-products-compliance-checklist).",
+            text: "Many markets require import, wholesale or tobacco trading licences. Confirm requirements with local authorities and work through our [import compliance checklist](/insights/importing-hnb-products-compliance-checklist).",
           },
         ],
       },
@@ -217,7 +217,7 @@ export const marketPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Use our [10 questions for choosing an HNB manufacturer](/blog/how-to-choose-an-hnb-manufacturer). Decide whether you will distribute the manufacturer's brand or build your own through [private label](/blog/oem-vs-private-label-hnb).",
+            text: "Use our [10 questions for choosing an HNB manufacturer](/insights/how-to-choose-an-hnb-manufacturer). Decide whether you will distribute the manufacturer's brand or build your own through [private label](/insights/oem-vs-private-label-hnb).",
           },
         ],
       },
@@ -226,7 +226,7 @@ export const marketPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Start with a small number of flavours that cover different preferences, and consider adding a tobacco-free [herbal line](/blog/what-are-herbal-hnb-sticks). See [building an HNB product range](/blog/building-an-hnb-product-range).",
+            text: "Start with a small number of flavours that cover different preferences, and consider adding a tobacco-free [herbal line](/insights/what-are-herbal-hnb-sticks). See [building an HNB product range](/insights/building-an-hnb-product-range).",
           },
         ],
       },
@@ -236,7 +236,7 @@ export const marketPosts: BlogPost[] = [
           {
             type: "list",
             items: [
-              "Plan shipping, warehousing and stock rotation (see [shipping from the UAE](/blog/shipping-hnb-products-from-the-uae)).",
+              "Plan shipping, warehousing and stock rotation (see [shipping from the UAE](/insights/shipping-hnb-products-from-the-uae)).",
               "Give retailers clear product information: flavour profiles, device compatibility, age restrictions.",
               "Track sell-through by flavour and outlet, and reorder on data.",
             ],
@@ -278,7 +278,7 @@ export const marketPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Group available flavours into families: classic tobacco, fresh and menthol, sweet, fruit, citrus and roasted. Our guide to [flavour profiles](/blog/hnb-flavour-profiles-explained) explains how to compare them.",
+            text: "Group available flavours into families: classic tobacco, fresh and menthol, sweet, fruit, citrus and roasted. Our guide to [flavour profiles](/insights/hnb-flavour-profiles-explained) explains how to compare them.",
           },
         ],
       },
@@ -307,7 +307,7 @@ export const marketPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Herbal sticks contain no tobacco or nicotine and can serve different customers or channels. Where regulations allow both, a mixed range covers more demand. See [what herbal HNB sticks are](/blog/what-are-herbal-hnb-sticks).",
+            text: "Herbal sticks contain no tobacco or nicotine and can serve different customers or channels. Where regulations allow both, a mixed range covers more demand. See [what herbal HNB sticks are](/insights/what-are-herbal-hnb-sticks).",
           },
         ],
       },
@@ -316,7 +316,7 @@ export const marketPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Your range must work in the devices your customers use. If there is no established device base, plan [device supply](/devices) together with sticks. See [stick and device compatibility](/blog/hnb-stick-and-device-compatibility).",
+            text: "Your range must work in the devices your customers use. If there is no established device base, plan [device supply](/devices) together with sticks. See [stick and device compatibility](/insights/hnb-stick-and-device-compatibility).",
           },
         ],
       },
@@ -325,7 +325,7 @@ export const marketPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Review sell-through each quarter. Replace the slowest flavour with a new direction rather than expanding endlessly, and keep stock deep on best sellers. Our [MOQ and volume planning guide](/blog/hnb-moq-and-volume-planning) covers reorder timing.",
+            text: "Review sell-through each quarter. Replace the slowest flavour with a new direction rather than expanding endlessly, and keep stock deep on best sellers. Our [MOQ and volume planning guide](/insights/hnb-moq-and-volume-planning) covers reorder timing.",
           },
         ],
       },
@@ -402,11 +402,11 @@ export const marketPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Total lead time = production (including packaging) + inland and port handling + transit + customs clearance + a safety buffer. Agree production timing when you confirm your order, and keep [import documents](/blog/importing-hnb-products-compliance-checklist) ready to avoid delays at the border.",
+            text: "Total lead time = production (including packaging) + inland and port handling + transit + customs clearance + a safety buffer. Agree production timing when you confirm your order, and keep [import documents](/insights/importing-hnb-products-compliance-checklist) ready to avoid delays at the border.",
           },
           {
             type: "p",
-            text: "KOKEN ships from Ras Al Khaimah, UAE. Read [why source HNB products from the UAE](/blog/why-manufacture-hnb-in-the-uae), then share your destination and preferred terms in a [quote request](/quote).",
+            text: "KOKEN ships from Ras Al Khaimah, UAE. Read [why source HNB products from the UAE](/insights/why-manufacture-hnb-in-the-uae), then share your destination and preferred terms in a [quote request](/quote).",
           },
         ],
       },

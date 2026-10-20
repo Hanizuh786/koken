@@ -47,7 +47,7 @@ export const basicsPosts: BlogPost[] = [
           },
           {
             type: "p",
-            text: "Sticks must be physically and thermally compatible with the device they are used in. That is why buyers planning a range should think about the [device and stick together](/blog/hnb-stick-and-device-compatibility) from the start.",
+            text: "Sticks must be physically and thermally compatible with the device they are used in. That is why buyers planning a range should think about the [device and stick together](/insights/hnb-stick-and-device-compatibility) from the start.",
           },
         ],
       },
@@ -56,7 +56,7 @@ export const basicsPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Looking from the tip to the mouth end, a typical heated stick contains a filling section, one or more cooling or support segments, and a filter, all wrapped in paper. The filling is the part that matters most for taste. It is commonly made from [HNB granules](/blog/what-are-hnb-granules) or a cast sheet of processed material, combined with humectants that help produce aerosol when heated, and flavourings.",
+            text: "Looking from the tip to the mouth end, a typical heated stick contains a filling section, one or more cooling or support segments, and a filter, all wrapped in paper. The filling is the part that matters most for taste. It is commonly made from [HNB granules](/insights/what-are-hnb-granules) or a cast sheet of processed material, combined with humectants that help produce aerosol when heated, and flavourings.",
           },
           {
             type: "list",
@@ -72,7 +72,7 @@ export const basicsPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Both formats work with the same heat-not-burn principle, and both can be offered in a range of flavours. The difference is the base material. Herbal sticks give brands a tobacco-free line that can sit alongside a tobacco range, which is useful in markets where regulations or consumer demand differ between the two. Our guide to [herbal HNB sticks](/blog/what-are-herbal-hnb-sticks) covers this in more detail.",
+            text: "Both formats work with the same heat-not-burn principle, and both can be offered in a range of flavours. The difference is the base material. Herbal sticks give brands a tobacco-free line that can sit alongside a tobacco range, which is useful in markets where regulations or consumer demand differ between the two. Our guide to [herbal HNB sticks](/insights/what-are-herbal-hnb-sticks) covers this in more detail.",
           },
         ],
       },
@@ -81,7 +81,7 @@ export const basicsPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Yes. Most countries regulate heated tobacco products, and many also have rules on herbal smoking or heating products. Requirements can cover product registration, ingredients, health warnings, packaging, taxation and where products can be sold. Some markets restrict or ban HNB products entirely. Anyone importing or distributing HNB products should confirm local rules first; our [import compliance checklist](/blog/importing-hnb-products-compliance-checklist) is a good starting point.",
+            text: "Yes. Most countries regulate heated tobacco products, and many also have rules on herbal smoking or heating products. Requirements can cover product registration, ingredients, health warnings, packaging, taxation and where products can be sold. Some markets restrict or ban HNB products entirely. Anyone importing or distributing HNB products should confirm local rules first; our [import compliance checklist](/insights/importing-hnb-products-compliance-checklist) is a good starting point.",
           },
           {
             type: "quote",
@@ -146,7 +146,7 @@ export const basicsPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Both use solid tobacco and both come as a paper-wrapped rod with a filter, which is why HNB sticks can look similar to short cigarettes. The difference is how the tobacco is used. A cigarette is lit and burns. An HNB stick is placed in a device that heats it in a controlled way, so the tobacco is warmed rather than burned. The tobacco in an HNB stick is also processed differently, usually into [granules](/blog/what-are-hnb-granules) or a cast sheet, so that it releases flavour and aerosol at lower temperatures.",
+            text: "Both use solid tobacco and both come as a paper-wrapped rod with a filter, which is why HNB sticks can look similar to short cigarettes. The difference is how the tobacco is used. A cigarette is lit and burns. An HNB stick is placed in a device that heats it in a controlled way, so the tobacco is warmed rather than burned. The tobacco in an HNB stick is also processed differently, usually into [granules](/insights/what-are-hnb-granules) or a cast sheet, so that it releases flavour and aerosol at lower temperatures.",
           },
         ],
       },
@@ -173,7 +173,7 @@ export const basicsPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Regulators usually treat each category separately. A market might allow e-cigarettes but restrict heated tobacco, or tax heated tobacco differently from cigarettes. Herbal products may fall under another set of rules again. Before planning a launch, confirm which category your product falls into in each destination market, and what that means for registration, labelling and tax. See our [compliance checklist](/blog/importing-hnb-products-compliance-checklist).",
+            text: "Regulators usually treat each category separately. A market might allow e-cigarettes but restrict heated tobacco, or tax heated tobacco differently from cigarettes. Herbal products may fall under another set of rules again. Before planning a launch, confirm which category your product falls into in each destination market, and what that means for registration, labelling and tax. See our [compliance checklist](/insights/importing-hnb-products-compliance-checklist).",
           },
           {
             type: "quote",
@@ -261,7 +261,7 @@ export const basicsPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Tobacco-free does not mean unregulated. Many markets have specific rules for herbal smoking or heating products covering labelling, ingredients, age restrictions and sale channels. Confirm the classification in each destination market before importing. Our [import compliance checklist](/blog/importing-hnb-products-compliance-checklist) lists the questions to ask.",
+            text: "Tobacco-free does not mean unregulated. Many markets have specific rules for herbal smoking or heating products covering labelling, ingredients, age restrictions and sale channels. Confirm the classification in each destination market before importing. Our [import compliance checklist](/insights/importing-hnb-products-compliance-checklist) lists the questions to ask.",
           },
         ],
       },
@@ -270,7 +270,7 @@ export const basicsPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Start with three or four flavours that cover different directions (for example citrus, fruit and mint) and add more as sales data comes in. Our guide to [building an HNB product range](/blog/building-an-hnb-product-range) covers how to balance tobacco and herbal SKUs. When you are ready, add the flavours to your [quote list](/quote).",
+            text: "Start with three or four flavours that cover different directions (for example citrus, fruit and mint) and add more as sales data comes in. Our guide to [building an HNB product range](/insights/building-an-hnb-product-range) covers how to balance tobacco and herbal SKUs. When you are ready, add the flavours to your [quote list](/quote).",
           },
         ],
       },
@@ -365,7 +365,7 @@ export const basicsPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Shortlist one flavour per family that suits your market, then check each against local flavour rules, since some jurisdictions restrict characterising flavours such as menthol or fruit. Request samples where possible, and plan to review sell-through after launch. Our guide to [building an HNB product range](/blog/building-an-hnb-product-range) walks through this step by step.",
+            text: "Shortlist one flavour per family that suits your market, then check each against local flavour rules, since some jurisdictions restrict characterising flavours such as menthol or fruit. Request samples where possible, and plan to review sell-through after launch. Our guide to [building an HNB product range](/insights/building-an-hnb-product-range) walks through this step by step.",
           },
         ],
       },

@@ -57,7 +57,7 @@ export const manufacturingPosts: BlogPost[] = [
           },
           {
             type: "p",
-            text: "From there, granules are filled into the stick rod. Our guide on [how HNB sticks are made](/blog/how-hnb-sticks-are-made) covers the next steps.",
+            text: "From there, granules are filled into the stick rod. Our guide on [how HNB sticks are made](/insights/how-hnb-sticks-are-made) covers the next steps.",
           },
         ],
       },
@@ -94,7 +94,7 @@ export const manufacturingPosts: BlogPost[] = [
           },
           {
             type: "p",
-            text: "For a fuller checklist, see [how to choose an HNB manufacturer](/blog/how-to-choose-an-hnb-manufacturer).",
+            text: "For a fuller checklist, see [how to choose an HNB manufacturer](/insights/how-to-choose-an-hnb-manufacturer).",
           },
         ],
       },
@@ -126,7 +126,7 @@ export const manufacturingPosts: BlogPost[] = [
     answer:
       "HNB sticks are made in stages: the filling (granules or sheet) is prepared, formed into a paper-wrapped rod, joined to filter and cooling segments, cut to length, inspected, then packed into packs and cartons.",
     takeaways: [
-      "Production starts with the **filling**, usually [granules](/blog/what-are-hnb-granules).",
+      "Production starts with the **filling**, usually [granules](/insights/what-are-hnb-granules).",
       "The filling is formed into a **rod**, which is joined to **filter and cooling segments**.",
       "**Inspection** checks weight, dimensions and appearance throughout.",
       "**Packing** into packs and cartons is where private-label branding is applied.",
@@ -137,7 +137,7 @@ export const manufacturingPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Production begins with the filling. Tobacco or herbal material is processed into [HNB granules](/blog/what-are-hnb-granules) or a cast sheet, with humectants and flavourings blended in. The filling must meet targets for moisture and consistency before it moves to rod making.",
+            text: "Production begins with the filling. Tobacco or herbal material is processed into [HNB granules](/insights/what-are-hnb-granules) or a cast sheet, with humectants and flavourings blended in. The filling must meet targets for moisture and consistency before it moves to rod making.",
           },
         ],
       },
@@ -164,7 +164,7 @@ export const manufacturingPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "The assembled rod is cut into individual sticks. Inspection checks length, diameter, weight, seal quality and appearance, and rejects sticks outside tolerance. Our [quality control checklist](/blog/hnb-quality-control-checklist) lists the checks buyers should ask about.",
+            text: "The assembled rod is cut into individual sticks. Inspection checks length, diameter, weight, seal quality and appearance, and rejects sticks outside tolerance. Our [quality control checklist](/insights/hnb-quality-control-checklist) lists the checks buyers should ask about.",
           },
         ],
       },
@@ -173,7 +173,7 @@ export const manufacturingPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Sticks are grouped into packs, wrapped and packed into cartons and shipping cases. This is where private-label artwork, health warnings and market-specific markings are applied, so packaging decisions should be agreed early. See our [HNB packaging guide](/blog/hnb-packaging-design-guide).",
+            text: "Sticks are grouped into packs, wrapped and packed into cartons and shipping cases. This is where private-label artwork, health warnings and market-specific markings are applied, so packaging decisions should be agreed early. See our [HNB packaging guide](/insights/hnb-packaging-design-guide).",
           },
           {
             type: "table",
@@ -252,7 +252,7 @@ export const manufacturingPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Each flavour should taste the same from batch to batch. Keep sealed reference samples from your approved sample round and compare new shipments against them in the target device. Describe differences using the [flavour profile terms](/blog/hnb-flavour-profiles-explained) of aroma, body and finish so feedback is specific.",
+            text: "Each flavour should taste the same from batch to batch. Keep sealed reference samples from your approved sample round and compare new shipments against them in the target device. Describe differences using the [flavour profile terms](/insights/hnb-flavour-profiles-explained) of aroma, body and finish so feedback is specific.",
           },
         ],
       },
@@ -275,7 +275,7 @@ export const manufacturingPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Documentation requirements differ by market and may include product specifications, ingredient information, certificates of origin and shipping documents. Ask your importer, customs broker or regulator what is needed, and share the list with your manufacturer before production. Our [import compliance checklist](/blog/importing-hnb-products-compliance-checklist) covers this.",
+            text: "Documentation requirements differ by market and may include product specifications, ingredient information, certificates of origin and shipping documents. Ask your importer, customs broker or regulator what is needed, and share the list with your manufacturer before production. Our [import compliance checklist](/insights/importing-hnb-products-compliance-checklist) covers this.",
           },
         ],
       },
@@ -284,7 +284,7 @@ export const manufacturingPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "Put specifications, tolerances and inspection points in writing before the first order, and agree what happens if a shipment is outside spec. A clear [OEM brief](/blog/how-to-write-an-hnb-oem-brief) is the best place to start.",
+            text: "Put specifications, tolerances and inspection points in writing before the first order, and agree what happens if a shipment is outside spec. A clear [OEM brief](/insights/how-to-write-an-hnb-oem-brief) is the best place to start.",
           },
         ],
       },
@@ -326,13 +326,13 @@ export const manufacturingPosts: BlogPost[] = [
             ordered: true,
             items: [
               "**Are you licensed for HNB production?** Ask which authority issued the licence and what it covers.",
-              "**Do you make granules in-house?** In-house [granules manufacturing](/blog/what-are-hnb-granules) means more control over flavour and consistency.",
+              "**Do you make granules in-house?** In-house [granules manufacturing](/insights/what-are-hnb-granules) means more control over flavour and consistency.",
               "**Which product types do you make?** Tobacco sticks, herbal sticks, or both.",
-              "**Which devices are your sticks designed for?** See [compatibility](/blog/hnb-stick-and-device-compatibility).",
+              "**Which devices are your sticks designed for?** See [compatibility](/insights/hnb-stick-and-device-compatibility).",
               "**What flavours are available today?** And can you adjust or develop flavours?",
-              "**What are your QC procedures?** Use our [QC checklist](/blog/hnb-quality-control-checklist) as a reference.",
+              "**What are your QC procedures?** Use our [QC checklist](/insights/hnb-quality-control-checklist) as a reference.",
               "**Do you support OEM and private label?** Including packaging artwork and market-specific markings.",
-              "**How do you handle volume planning?** Ask how minimum quantities and lead times are set. See [MOQ planning](/blog/hnb-moq-and-volume-planning).",
+              "**How do you handle volume planning?** Ask how minimum quantities and lead times are set. See [MOQ planning](/insights/hnb-moq-and-volume-planning).",
               "**Which markets do you export to?** And what documentation can you provide?",
               "**Who is my contact?** A named sales or account contact makes programmes run smoothly.",
             ],
@@ -407,7 +407,7 @@ export const manufacturingPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "The country has large container ports and international air cargo hubs with frequent connections worldwide. That gives buyers a choice between sea freight for full programmes and air freight for samples or urgent top-ups. Our guide to [shipping HNB products from the UAE](/blog/shipping-hnb-products-from-the-uae) covers the options.",
+            text: "The country has large container ports and international air cargo hubs with frequent connections worldwide. That gives buyers a choice between sea freight for full programmes and air freight for samples or urgent top-ups. Our guide to [shipping HNB products from the UAE](/insights/shipping-hnb-products-from-the-uae) covers the options.",
           },
         ],
       },
@@ -425,7 +425,7 @@ export const manufacturingPosts: BlogPost[] = [
         blocks: [
           {
             type: "p",
-            text: "KOKEN is the official patent and licence holder for HNB production in the UAE. For buyers, working with a licensed producer is the first step in building a compliant supply chain. You can then add [granules manufacturing](/blog/what-are-hnb-granules), [private label](/custom-branding) and bulk supply from the same partner.",
+            text: "KOKEN is the official patent and licence holder for HNB production in the UAE. For buyers, working with a licensed producer is the first step in building a compliant supply chain. You can then add [granules manufacturing](/insights/what-are-hnb-granules), [private label](/custom-branding) and bulk supply from the same partner.",
           },
         ],
       },
@@ -436,7 +436,7 @@ export const manufacturingPosts: BlogPost[] = [
             type: "list",
             items: [
               "Whether your destination market allows import of the product category.",
-              "Documentation needed at your border (see our [compliance checklist](/blog/importing-hnb-products-compliance-checklist)).",
+              "Documentation needed at your border (see our [compliance checklist](/insights/importing-hnb-products-compliance-checklist)).",
               "Packaging and labelling rules for your market.",
               "Shipping method, incoterm and lead time.",
             ],
