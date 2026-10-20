@@ -5,22 +5,42 @@ import type { Product } from "@/data/products";
 type RfqItem = { slug: string; name: string; categoryLabel: string; quantity: number };
 type RfqContext = { items: RfqItem[]; addItem: (product: Product) => void; removeItem: (slug: string) => void; updateQuantity: (slug: string, quantity: number) => void; clear: () => void; count: number };
 const Context = createContext<RfqContext | null>(null);
+const STORAGE_KEY = "koken_rfq_items";
+
+function readSaved(raw: string | null): RfqItem[] {
+  try {
+    const saved = JSON.parse(raw || "[]");
+    return Array.isArray(saved) ? saved : [];
+  } catch {
+    return [];
+  }
+}
 
 export function RfqProvider({ children }: { children: React.ReactNode }) {
   const [items, setItems] = useState<RfqItem[]>([]);
   const [hydrated, setHydrated] = useState(false);
   useEffect(() => {
     try {
-      const saved = JSON.parse(localStorage.getItem("koken_rfq_items") || "[]");
-      setItems(Array.isArray(saved) ? saved : []);
+      setItems(readSaved(localStorage.getItem(STORAGE_KEY)));
     } catch {
       setItems([]);
     } finally {
       setHydrated(true);
     }
+    // Keep every open tab in sync: the browser fires "storage" in other tabs when the list changes.
+    const onStorage = (event: StorageEvent) => {
+      if (event.key === STORAGE_KEY || event.key === null) setItems(readSaved(event.newValue));
+    };
+    window.addEventListener("storage", onStorage);
+    return () => window.removeEventListener("storage", onStorage);
   }, []);
   useEffect(() => {
-    if (hydrated) localStorage.setItem("koken_rfq_items", JSON.stringify(items));
+    if (!hydrated) return;
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+    } catch {
+      // Storage can be unavailable (private mode, blocked site data); the list still works in this tab.
+    }
   }, [hydrated, items]);
   const addItem = (product: Product) => setItems(prev => {
     const found = prev.find(item => item.slug === product.slug);
