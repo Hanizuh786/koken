@@ -13,30 +13,29 @@ export type Product = {
   accent: string;
 };
 
-const tobaccoDetailArtwork: Record<string, string> = {
-  "amber-tobacco-sticks": "amber-bronzy.png",
-  "blue-tobacco-sticks": "blue-blue.png",
-  "silver-tobacco-sticks": "silver-silver.png",
-  "tobacco-classic-sticks": "tobacco-red.png",
-  "blueberry-tobacco-sticks": "blueberry.png",
-  "vanilla-tobacco-sticks": "vanilla-creamy.png",
-  "menthol-tobacco-sticks": "menthol-green.png",
+export type ProductImageInfo = { src: string; width: number; height: number };
+
+// Optimised WebP artwork with descriptive file names; device and branding
+// entries have no artwork and render the styled fallback instead.
+export const getProductImage = (product: Product, size: "card" | "detail"): ProductImageInfo | null => {
+  if (product.category !== "tobacco" && product.category !== "herbal") return null;
+  if (size === "detail") return { src: `/images/products/koken-${product.slug}.webp`, width: 1000, height: 1000 };
+  return {
+    src: `/images/products/thumbnails/koken-${product.slug}.webp`,
+    width: 640,
+    height: product.category === "herbal" ? 960 : 640,
+  };
 };
 
-export const getProductImagePath = (product: Product, size: "card" | "detail") => {
-  if (product.category === "herbal") {
-    const flavourKey = product.slug.replace("-herbal-sticks", "");
-    return size === "detail"
-      ? `/images/products/herbal/${flavourKey}.png`
-      : `/images/products/herbal/thumbnails/${flavourKey}.png`;
-  }
+// 1200x630 JPEG share card (Open Graph/Twitter); WebP is not supported by every social platform.
+export const getProductOgImage = (product: Product) =>
+  product.category === "tobacco" || product.category === "herbal" ? `/images/products/og/koken-${product.slug}.jpg` : undefined;
 
-  if (product.category === "tobacco") {
-    return `/images/products/${tobaccoDetailArtwork[product.slug] ?? `${product.slug}.png`}`;
-  }
-
-  return `/images/products/${product.slug}.png`;
-};
+// Unique, descriptive name used in titles, headings and alt text, e.g. "Blueberry Herbal Sticks".
+export const getProductFullName = (product: Product) =>
+  product.category === "tobacco" || product.category === "herbal"
+    ? `${product.name === "Tobacco" ? "Classic" : product.name} ${product.categoryLabel.replace(/\bsticks\b/, "Sticks")}`
+    : product.name;
 
 export const products: Product[] = [
   {
@@ -224,3 +223,5 @@ export const products: Product[] = [
 
 export const getProductsByCategory = (category: ProductCategory) => products.filter((product) => product.category === category);
 export const getProductBySlug = (slug: string) => products.find((product) => product.slug === slug);
+export const getRelatedProducts = (product: Product, limit = 3) =>
+  products.filter((item) => item.category === product.category && item.slug !== product.slug).slice(0, limit);

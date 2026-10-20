@@ -17,3 +17,12 @@
 - Responsive design
 - SEO metadata and product structured data
 # koken
+
+## SEO and AI search (GEO)
+- `sitemap.xml`, `robots.txt` (AI crawlers allowed) and `llms.txt` are generated from `src/data` and `src/lib/site.ts`
+- Canonical URLs, Open Graph/Twitter cards and a generated share image on every page
+- Structured data: Organization/LocalBusiness, WebSite, Product, ItemList, BreadcrumbList, FAQPage, DefinedTermSet
+- About, Contact (with map), FAQ and Glossary pages; custom 404
+- Company name/address/phone live in `src/lib/site.ts` so they stay consistent everywhere
+- Optional env vars: `NEXT_PUBLIC_GA_ID` (GA4 + `generate_lead` conversion on quote submit), `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`, `NEXT_PUBLIC_BING_SITE_VERIFICATION`
+- Bump `contentUpdated` in `src/lib/site.ts` when copy changes

@@ -1,15 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { getProductImagePath, type Product } from "@/data/products";
+import { getProductFullName, getProductImage, type Product } from "@/data/products";
 
 export default function ProductImage({ product, size = "card" }: { product: Product; size?: "card" | "detail" }) {
   const [failed, setFailed] = useState(false);
-  const imagePath = getProductImagePath(product, size);
+  const image = getProductImage(product, size);
+  const isDetail = size === "detail";
 
-  if (failed) {
+  if (!image || failed) {
     return (
-      <div className={`productVisual fallbackVisual ${product.accent} ${size === "detail" ? "detailFallback" : "thumbnailFallback"}`}>
+      <div className={`productVisual fallbackVisual ${product.accent} ${isDetail ? "detailFallback" : "thumbnailFallback"}`}>
         <span>{product.categoryLabel}</span>
         <strong>{product.name}</strong>
       </div>
@@ -17,8 +18,18 @@ export default function ProductImage({ product, size = "card" }: { product: Prod
   }
 
   return (
-    <div className={`productImageWrap ${size === "detail" ? "detailImageWrap" : "thumbnailImageWrap"}`}>
-      <img src={imagePath} alt={`${product.name} ${product.categoryLabel} product image`} onError={() => setFailed(true)} />
+    <div className={`productImageWrap ${isDetail ? "detailImageWrap" : "thumbnailImageWrap"}`}>
+      <img
+        src={image.src}
+        width={image.width}
+        height={image.height}
+        alt={`KOKEN ${getProductFullName(product)} pack`}
+        // The detail image is the LCP element; card images sit below the fold.
+        loading={isDetail ? "eager" : "lazy"}
+        fetchPriority={isDetail ? "high" : "auto"}
+        decoding="async"
+        onError={() => setFailed(true)}
+      />
     </div>
   );
 }
