@@ -14,6 +14,11 @@ export const company = {
   telephone: "+971565053048",
   telephoneDisplay: "+971 56 505 3048",
   whatsappUrl: "https://wa.me/971565053048",
+  // Quote requests are sent to each of these WhatsApp numbers (digits only, international format).
+  quoteWhatsApp: [
+    { number: "971565053048", display: "+971 56 505 3048" },
+    { number: "971567098306", display: "+971 56 709 8306" },
+  ],
   linkedin: "https://www.linkedin.com/company/kokenstick",
   logo: "/images/koken-logo.png",
   address: {
