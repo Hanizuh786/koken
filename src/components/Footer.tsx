@@ -29,6 +29,7 @@ export default function Footer() {
         <div>
           <h2>Company</h2>
           <Link href="/about">About KOKEN</Link>
+          <Link href="/insights">HNB insights and guides</Link>
           <Link href="/faq">HNB manufacturing FAQ</Link>
           <Link href="/glossary">HNB glossary</Link>
           <Link href="/contact">Contact and location</Link>

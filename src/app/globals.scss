@@ -1126,3 +1126,134 @@ textarea {
 .productDetailCrumbs + .productDetail {
   padding-top: 24px;
 }
+
+/* Blog */
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
+}
+.blogCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px;
+}
+.blogCard h2,
+.blogCard h3 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  margin: 4px 0 0;
+}
+.blogCard h2 a:hover,
+.blogCard h3 a:hover {
+  color: var(--blue);
+}
+.blogCard p {
+  color: #425474;
+  line-height: 1.6;
+  margin: 0;
+}
+.blogFeatured .blogCard {
+  max-width: 900px;
+}
+.blogFeatured .blogCard h2 {
+  font-size: clamp(1.5rem, 2.4vw, 2.1rem);
+}
+.blogMeta,
+.pageHero .blogMeta {
+  font-size: 0.92rem;
+  color: #5d6f8d;
+}
+.blogMeta a {
+  color: var(--blue);
+}
+.blogCategoryNav {
+  margin-top: 22px;
+}
+.blogCategory {
+  padding-top: 24px;
+  scroll-margin-top: 120px;
+}
+.blogArticle .pageHero h1 {
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  line-height: 1.05;
+  max-width: 1000px;
+}
+.blogBody {
+  max-width: 900px;
+}
+.blogBody p,
+.blogBody li {
+  font-size: 1.06rem;
+  line-height: 1.78;
+  color: #33466a;
+}
+.blogBody h2 {
+  font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+  margin-top: 8px;
+}
+.blogSection {
+  margin-bottom: 36px;
+  scroll-margin-top: 130px;
+}
+.blogBody a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.blogBody blockquote {
+  margin: 0 0 18px;
+  padding: 14px 20px;
+  border-left: 4px solid var(--blue);
+  background: rgba(255, 255, 255, 0.86);
+  border-radius: 12px;
+  color: #33466a;
+}
+.blogTakeaways,
+.blogToc {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 20px 24px;
+  margin-bottom: 28px;
+}
+.blogTakeaways h2,
+.blogToc h2 {
+  font-size: 1.15rem;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+}
+.blogTakeaways ul,
+.blogToc ol {
+  margin: 0;
+  padding-left: 20px;
+}
+.blogToc li {
+  line-height: 1.9;
+}
+.tableScroll {
+  overflow-x: auto;
+  margin-bottom: 18px;
+}
+.blogTable caption {
+  text-align: left;
+  font-weight: 800;
+  padding: 0 0 10px;
+}
+.blogTable thead th {
+  background: #eef3fb;
+}
+.blogCta {
+  margin-top: 12px;
+}
+.blogAuthor {
+  max-width: 900px;
+}
+.blogDisclaimer {
+  font-size: 0.9rem;
+}

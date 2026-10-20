@@ -21,7 +21,7 @@ export default function FaqPage() {
         <h1>HNB manufacturing FAQ.</h1>
         <p>
           Straight answers to the questions importers, distributors and brand owners ask most often. New to the terminology? See
-          the <Link href="/glossary">HNB glossary</Link>.
+          the <Link href="/glossary">HNB glossary</Link>, or read the in-depth <Link href="/insights">HNB guides</Link>.
         </p>
       </section>
       <Faq items={items} eyebrow="All questions" title="Questions about KOKEN and HNB supply" />

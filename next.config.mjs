@@ -15,6 +15,9 @@ const nextConfig = {
         destination: `${siteUrl.origin}/:path*`,
         permanent: true,
       },
+      // The guides section was renamed from Blog to Insights.
+      { source: "/blog", destination: "/insights", permanent: true },
+      { source: "/blog/:path*", destination: "/insights/:path*", permanent: true },
     ];
   },
   async headers() {

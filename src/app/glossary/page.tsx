@@ -33,7 +33,7 @@ export default function GlossaryPage() {
         <h1>HNB glossary.</h1>
         <p>
           Definitions of the heat-not-burn terms used across the KOKEN website and in B2B supply conversations. Have a specific
-          question? Read the <Link href="/faq">FAQ</Link>.
+          question? Read the <Link href="/faq">FAQ</Link> or browse <Link href="/insights">KOKEN Insights</Link>.
         </p>
       </section>
       <section className="sectionPad">
