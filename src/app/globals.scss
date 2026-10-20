@@ -1257,3 +1257,34 @@ textarea {
 .blogDisclaimer {
   font-size: 0.9rem;
 }
+.whatsappSent h2 {
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+}
+.whatsappSent p {
+  color: #425474;
+  line-height: 1.65;
+}
+.whatsappSteps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0;
+}
+.whatsappNote {
+  font-size: 0.9rem;
+  color: #5d6f8d;
+  margin-top: 12px;
+}
+.whatsappNote a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+.textButton {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--blue);
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: underline;
+}
