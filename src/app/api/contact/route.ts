@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { getProductBySlug } from "@/data/products";
 
 // Every quote enquiry is delivered to all three inboxes.
 const RECIPIENTS = ["sales@koken-inc.cn", "info@koken-inc.cn", "hanya@koken-inc.cn"];
@@ -23,8 +24,14 @@ export async function POST(req: Request) {
   const body = await req.json();
   if (body.website) return NextResponse.json({ success: true, message: "Received." });
   const fullName=clean(body.fullName), companyName=clean(body.companyName), country=clean(body.country), email=clean(body.email), whatsapp=clean(body.whatsapp), businessType=clean(body.businessType), estimatedVolume=clean(body.estimatedVolume), targetMarket=clean(body.targetMarket), message=clean(body.message), consent=clean(body.consent);
-  const lineItems = Array.isArray(body.lineItems) ? body.lineItems : [];
-  if (!fullName || !companyName || !country || !email || !message || consent !== "accepted") return NextResponse.json({ success:false, message:"Please complete all required fields." }, { status:400 });
+  // Agents (see /openapi.json) may send just { slug, quantity }; fill in the name and category from the catalogue.
+  const lineItems = (Array.isArray(body.lineItems) ? body.lineItems : []).map((item: any) => {
+    const product = item?.slug ? getProductBySlug(String(item.slug)) : undefined;
+    return { name: item?.name || product?.name || item?.slug, categoryLabel: item?.categoryLabel || product?.categoryLabel || "", quantity: item?.quantity || 1 };
+  });
+  const missing = Object.entries({ fullName, companyName, country, email, message }).filter(([, v]) => !v).map(([k]) => k);
+  if (consent !== "accepted") missing.push("consent");
+  if (missing.length) return NextResponse.json({ success:false, message:"Please complete all required fields.", missing }, { status:400 });
   const smtp = smtpConfig();
   if (smtp.missing.length) {
     console.error(`[contact] SMTP not configured; missing: ${smtp.missing.join(", ")}`);

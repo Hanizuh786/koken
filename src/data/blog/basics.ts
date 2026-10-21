@@ -248,7 +248,8 @@ export const basicsPosts: BlogPost[] = [
             rows: [
               ["[Grapeel](/products/grapeel-herbal-sticks)", "Grapefruit peel: vibrant zest, a touch of natural bitterness, clean finish"],
               ["[Blueberry](/products/blueberry-herbal-sticks)", "Sweet blueberry with a smooth, fruity berry character"],
-              ["[Peppermint](/products/peppermint-herbal-sticks)", "Smooth, moderate mint with a refreshing finish"],
+              // Peppermint hidden for now:
+              // ["[Peppermint](/products/peppermint-herbal-sticks)", "Smooth, moderate mint with a refreshing finish"],
               ["[Mango](/products/mango-herbal-sticks)", "Sweet tropical mango, juicy and warm"],
               ["[Coffee](/products/coffee-herbal-sticks)", "Rich roasted coffee with a warm finish"],
               ["[Lemon](/products/lemon-herbal-sticks)", "Fresh, tangy lemon with a bright citrus finish"],
@@ -351,7 +352,8 @@ export const basicsPosts: BlogPost[] = [
             type: "list",
             items: [
               "**Classic tobacco:** rounded, familiar tobacco character (Amber, Classic Tobacco, Silver).",
-              "**Fresh and cooling:** menthol and mint directions (Blue, Menthol, herbal Peppermint).",
+              // Peppermint hidden for now: "**Fresh and cooling:** menthol and mint directions (Blue, Menthol, herbal Peppermint).",
+              "**Fresh and cooling:** menthol directions (Blue, Menthol).",
               "**Sweet and dessert:** vanilla and similar soft profiles (Vanilla).",
               "**Fruit:** berry and tropical directions (tobacco Blueberry, herbal Blueberry and Mango).",
               "**Citrus:** bright, tangy profiles (herbal Grapeel and Lemon).",

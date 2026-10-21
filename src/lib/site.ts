@@ -32,7 +32,7 @@ export const company = {
 };
 
 // Bump when page copy is meaningfully updated; used for dateModified and sitemap lastModified.
-export const contentUpdated = "2026-10-20";
+export const contentUpdated = "2026-10-21";
 
 export const absoluteUrl = (path: string) =>
   path.startsWith("http") ? path : `${siteUrl}${path.startsWith("/") ? path : `/${path}`}`;

@@ -7,6 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import ProductCard from "@/components/ProductCard";
 import ProductImage from "@/components/ProductImage";
 import { getProductBySlug, getProductFullName, getProductImage, getProductOgImage, getRelatedProducts, products, type Product } from "@/data/products";
+import { quoteUrl } from "@/lib/agent";
 import { absoluteUrl, company, organizationId, pageMeta } from "@/lib/site";
 
 const categoryPaths: Record<Product["category"], string> = {
@@ -101,6 +102,12 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     brand: { "@type": "Brand", name: company.shortName },
     manufacturer: { "@id": organizationId },
     countryOfOrigin: { "@type": "Country", name: "United Arab Emirates" },
+    // Tells assistive agents how to act on the product: add it to the quote list (AAO).
+    potentialAction: {
+      "@type": "QuoteAction",
+      name: `Request a quote for ${fullName}`,
+      target: { "@type": "EntryPoint", urlTemplate: quoteUrl([slug]), actionPlatform: ["https://schema.org/DesktopWebPlatform", "https://schema.org/MobileWebPlatform"] },
+    },
     ...(product.flavourProfile
       ? {
           additionalProperty: product.flavourProfile.map((value) => ({

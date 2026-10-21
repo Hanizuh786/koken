@@ -77,7 +77,8 @@ export const herbalFaqs: FaqItem[] = [
   {
     question: "Which herbal stick flavours does KOKEN offer?",
     answer:
-      "KOKEN offers 6 herbal stick flavours: Grapeel (grapefruit peel), Blueberry, Peppermint, Mango, Coffee and Lemon.",
+      // Peppermint hidden for now: "KOKEN offers 6 herbal stick flavours: Grapeel (grapefruit peel), Blueberry, Peppermint, Mango, Coffee and Lemon.",
+      "KOKEN offers 5 herbal stick flavours: Grapeel (grapefruit peel), Blueberry, Mango, Coffee and Lemon.",
   },
 ];
 

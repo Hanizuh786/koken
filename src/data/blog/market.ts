@@ -291,9 +291,11 @@ export const marketPosts: BlogPost[] = [
             head: ["Role in range", "Tobacco option", "Herbal option"],
             rows: [
               ["Classic anchor", "[Amber](/products/amber-tobacco-sticks) or [Classic Tobacco](/products/tobacco-classic-sticks)", "[Coffee](/products/coffee-herbal-sticks)"],
-              ["Fresh / cooling", "[Menthol](/products/menthol-tobacco-sticks) or [Blue](/products/blue-tobacco-sticks)", "[Peppermint](/products/peppermint-herbal-sticks)"],
+              // Peppermint hidden for now:
+              // ["Fresh / cooling", "[Menthol](/products/menthol-tobacco-sticks) or [Blue](/products/blue-tobacco-sticks)", "[Peppermint](/products/peppermint-herbal-sticks)"],
+              ["Fresh / cooling", "[Menthol](/products/menthol-tobacco-sticks) or [Blue](/products/blue-tobacco-sticks)", "[Lemon](/products/lemon-herbal-sticks)"],
               ["Smooth / sweet", "[Silver](/products/silver-tobacco-sticks) or [Vanilla](/products/vanilla-tobacco-sticks)", "[Mango](/products/mango-herbal-sticks)"],
-              ["Fruit / citrus", "[Blueberry](/products/blueberry-tobacco-sticks)", "[Grapeel](/products/grapeel-herbal-sticks) or [Lemon](/products/lemon-herbal-sticks)"],
+              ["Fruit / citrus", "[Blueberry](/products/blueberry-tobacco-sticks)", "[Grapeel](/products/grapeel-herbal-sticks) or [Blueberry](/products/blueberry-herbal-sticks)"],
             ],
           },
           {

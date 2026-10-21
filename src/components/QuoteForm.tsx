@@ -1,7 +1,8 @@
 "use client";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 import { useRfq } from "./RfqProvider";
 import { trackEvent } from "@/lib/analytics";
+import { businessTypes, quoteFields } from "@/lib/agent";
 import { company } from "@/lib/site";
 
 const whatsappLink = (number: string, text: string) => `https://wa.me/${number}?text=${encodeURIComponent(text)}`;
@@ -36,6 +37,21 @@ export default function QuoteForm() {
   const { items, removeItem, updateQuantity, clear } = useRfq();
   const [sentMessage, setSentMessage] = useState<string | null>(null);
   const [opened, setOpened] = useState<string[]>([]);
+  const formRef = useRef<HTMLFormElement>(null);
+
+  // Agent deep link (AAO): /quote?fullName=...&companyName=...&message=... prefills the form for the buyer to review.
+  useEffect(() => {
+    const form = formRef.current;
+    if (!form) return;
+    const params = new URLSearchParams(window.location.search);
+    for (const { name } of quoteFields) {
+      const value = params.get(name);
+      const field = form.elements.namedItem(name);
+      if (!value || !(field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement || field instanceof HTMLSelectElement)) continue;
+      if (field instanceof HTMLSelectElement && !businessTypes.includes(value)) continue;
+      field.value = value;
+    }
+  }, []);
 
   function openWhatsApp(number: string, text: string) {
     window.open(whatsappLink(number, text), "_blank", "noopener,noreferrer");
@@ -59,7 +75,7 @@ export default function QuoteForm() {
     form.reset();
   }
 
-  return <div className="quoteGrid"><section className="quoteList"><h2>Selected quote items</h2>{items.length === 0 ? <p>No products selected yet. Add products from any product page.</p> : items.map(item => <div className="quoteItem" key={item.slug}><div><strong>{item.name}</strong><span>{item.categoryLabel}</span></div><input type="number" min="1" value={item.quantity} onChange={e=>updateQuantity(item.slug, Number(e.target.value))}/><button onClick={()=>removeItem(item.slug)}>Remove</button></div>)}</section>
+  return <div className="quoteGrid"><section className="quoteList" aria-live="polite"><h2>Selected quote items</h2>{items.length === 0 ? <p>No products selected yet. Add products from any product page.</p> : items.map(item => <div className="quoteItem" key={item.slug}><div><strong>{item.name}</strong><span>{item.categoryLabel}</span></div><input type="number" min="1" aria-label={`Quantity for ${item.name} ${item.categoryLabel}`} value={item.quantity} onChange={e=>updateQuantity(item.slug, Number(e.target.value))}/><button type="button" aria-label={`Remove ${item.name} ${item.categoryLabel}`} onClick={()=>removeItem(item.slug)}>Remove</button></div>)}</section>
     {sentMessage ? (
       <div className="contactForm whatsappSent" role="status">
         <h2>Almost done: send your request on WhatsApp</h2>
@@ -75,7 +91,24 @@ export default function QuoteForm() {
         <button type="button" className="textButton" onClick={() => { setSentMessage(null); setOpened([]); }}>Start a new request</button>
       </div>
     ) : (
-      <form className="contactForm" onSubmit={submit}><input name="website" className="hideField" tabIndex={-1} autoComplete="off"/><div className="formGrid"><label>Full name<input name="fullName" required/></label><label>Company name<input name="companyName" required/></label><label>Country / region<input name="country" required/></label><label>Email address<input type="email" name="email" required/></label><label>WhatsApp number<input name="whatsapp"/></label><label>Business type<select name="businessType" required defaultValue=""><option value="" disabled>Select type</option><option>Brand owner</option><option>Importer</option><option>Wholesaler</option><option>Retail chain buyer</option><option>OEM client</option><option>Other business enquiry</option></select></label><label>Estimated bulk volume<input name="estimatedVolume" placeholder="Monthly or annual volume"/></label><label>Target market<input name="targetMarket" placeholder="Country or region"/></label></div><label>Message<textarea name="message" rows={5} required placeholder="Tell us about your required products, quote volume, packaging or OEM requirement"/></label><label className="consent"><input type="checkbox" name="consent" value="accepted" required/>I confirm this is a lawful adult-market B2B enquiry.</label><button className="submitButton">Send quote request via WhatsApp</button><p className="whatsappNote">Your request opens in WhatsApp, ready to send to the KOKEN sales team.</p></form>
+      <form ref={formRef} className="contactForm" onSubmit={submit} aria-label="Request for quote" data-agent-action="requestQuote">
+        {/* Honeypot: hidden from people and assistive agents; bots that fill it are ignored. */}
+        <input name="website" className="hideField" tabIndex={-1} autoComplete="off" aria-hidden="true"/>
+        <div className="formGrid">
+          <label>Full name<input name="fullName" autoComplete="name" required/></label>
+          <label>Company name<input name="companyName" autoComplete="organization" required/></label>
+          <label>Country / region<input name="country" autoComplete="country-name" required/></label>
+          <label>Email address<input type="email" name="email" autoComplete="email" required/></label>
+          <label>WhatsApp number<input type="tel" name="whatsapp" autoComplete="tel" inputMode="tel"/></label>
+          <label>Business type<select name="businessType" required defaultValue=""><option value="" disabled>Select type</option>{businessTypes.map(type => <option key={type}>{type}</option>)}</select></label>
+          <label>Estimated bulk volume<input name="estimatedVolume" placeholder="Monthly or annual volume"/></label>
+          <label>Target market<input name="targetMarket" placeholder="Country or region"/></label>
+        </div>
+        <label>Message<textarea name="message" rows={5} required placeholder="Tell us about your required products, quote volume, packaging or OEM requirement"/></label>
+        <label className="consent"><input type="checkbox" name="consent" value="accepted" required/>I confirm this is a lawful adult-market B2B enquiry.</label>
+        <button type="submit" className="submitButton">Send quote request via WhatsApp</button>
+        <p className="whatsappNote">Your request opens in WhatsApp, ready to send to the KOKEN sales team.</p>
+      </form>
     )}
   </div>
 }

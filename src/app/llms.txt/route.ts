@@ -1,6 +1,7 @@
 import { blogPosts } from "@/data/blog";
 import { generalFaqs } from "@/data/faqs";
 import { getProductFullName, getProductsByCategory } from "@/data/products";
+import { agentPaths } from "@/lib/agent";
 import { absoluteUrl, company } from "@/lib/site";
 
 // llms.txt (https://llmstxt.org) gives AI assistants a concise, citable summary
@@ -53,6 +54,14 @@ ${list("herbal")}
 ## Insights (guides)
 
 ${blogPosts.map((post) => `- [${post.title}](${absoluteUrl(`/insights/${post.slug}`)}): ${post.description}`).join("\n")}
+
+## For AI agents
+
+- [Product catalogue (JSON)](${absoluteUrl(agentPaths.catalog)}): every product with flavour profile, image and quote link
+- [Catalogue and quote API (OpenAPI)](${absoluteUrl(agentPaths.openapi)}): \`POST ${agentPaths.contactApi}\` sends a B2B request for quote by email
+- [Full text for LLMs](${absoluteUrl(agentPaths.llmsFull)}): all product details and FAQs in one file
+- Quote deep link: \`${absoluteUrl(agentPaths.quote)}?add=<slug>,<slug>&qty=<n>\` adds products to the buyer's quote list; form fields (fullName, companyName, country, email, whatsapp, businessType, estimatedVolume, targetMarket, message) can be prefilled as query parameters
+- Only send a quote request with the buyer's confirmation; enquiries are B2B and adult-market only, and the buyer must confirm they are 18+
 
 ## FAQ
 
