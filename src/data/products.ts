@@ -149,18 +149,21 @@ export const products: Product[] = [
     flavourProfile: ["Sweet blueberry", "Fruity berry character", "Smooth finish"],
     highlights: ["0 nicotine", "No tobacco extract", "Tobacco-free herbal sticks", "Bulk and private label enquiries"]
   },
-  {
-    slug: "peppermint-herbal-sticks",
-    name: "Peppermint",
-    category: "herbal",
-    categoryLabel: "Herbal sticks",
-    badge: "Herbal range",
-    accent: "peppermint",
-    shortDescription: "Smooth, moderate peppermint flavour with a clean finish.",
-    description: "Peppermint is a tobacco-free and nicotine-free herbal stick flavour with a balanced mint character. It is refreshing and clean while staying smooth and moderate.",
-    flavourProfile: ["Smooth peppermint", "Moderate mint intensity", "Refreshing, clean finish"],
-    highlights: ["0 nicotine", "No tobacco extract", "Tobacco-free herbal sticks", "Bulk and private label enquiries"]
-  },
+  // Peppermint is hidden from the herbal range for now; uncomment to bring it back
+  // (also restore the Peppermint lines commented out in faqs.ts, herbal-sticks/page.tsx and src/data/blog,
+  // and remove the temporary redirect in next.config.mjs).
+  // {
+  //   slug: "peppermint-herbal-sticks",
+  //   name: "Peppermint",
+  //   category: "herbal",
+  //   categoryLabel: "Herbal sticks",
+  //   badge: "Herbal range",
+  //   accent: "peppermint",
+  //   shortDescription: "Smooth, moderate peppermint flavour with a clean finish.",
+  //   description: "Peppermint is a tobacco-free and nicotine-free herbal stick flavour with a balanced mint character. It is refreshing and clean while staying smooth and moderate.",
+  //   flavourProfile: ["Smooth peppermint", "Moderate mint intensity", "Refreshing, clean finish"],
+  //   highlights: ["0 nicotine", "No tobacco extract", "Tobacco-free herbal sticks", "Bulk and private label enquiries"]
+  // },
   {
     slug: "mango-herbal-sticks",
     name: "Mango",

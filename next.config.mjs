@@ -18,6 +18,9 @@ const nextConfig = {
       // The guides section was renamed from Blog to Insights.
       { source: "/blog", destination: "/insights", permanent: true },
       { source: "/blog/:path*", destination: "/insights/:path*", permanent: true },
+      // Peppermint herbal sticks are hidden for now; temporary redirect so old links still land on the range.
+      // Remove this when the product is uncommented in src/data/products.ts.
+      { source: "/products/peppermint-herbal-sticks", destination: "/herbal-sticks", permanent: false },
     ];
   },
   async headers() {

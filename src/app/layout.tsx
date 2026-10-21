@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import { RfqProvider } from "@/components/RfqProvider";
+import { agentPaths } from "@/lib/agent";
 import { absoluteUrl, company, organizationId, siteUrl } from "@/lib/site";
 
 const defaultTitle = "KOKEN International FZ-LLC | HNB Manufacturer in the UAE";
@@ -90,6 +91,12 @@ const organizationSchema = {
     },
   ],
   sameAs: [company.linkedin],
+  // The main action an assistive agent can take for a buyer: start a request for quote (AAO).
+  potentialAction: {
+    "@type": "QuoteAction",
+    name: "Request a B2B quote",
+    target: { "@type": "EntryPoint", urlTemplate: `${absoluteUrl(agentPaths.quote)}?add={product_slugs}`, actionPlatform: "https://schema.org/DesktopWebPlatform" },
+  },
 };
 
 const websiteSchema = {
@@ -113,6 +120,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en-AE">
+      <head>
+        {/* Machine-readable entry points for AI assistants and agents (AAO). */}
+        <link rel="alternate" type="text/plain" title="llms.txt" href={agentPaths.llms} />
+        <link rel="alternate" type="application/json" title="Product catalogue" href={agentPaths.catalog} />
+        <link rel="service-desc" type="application/json" title="Catalogue and quote API" href={agentPaths.openapi} />
+      </head>
       <body>
         <JsonLd data={[organizationSchema, websiteSchema]} />
         <RfqProvider>
