@@ -25,8 +25,11 @@ export const dynamicParams = false;
 
 function metaDescription(product: Product) {
   const fullName = getProductFullName(product);
+  // Device and branding entries have no flavour notes, so their summary fills the gap instead.
+  const detail = (profile: string[]) =>
+    profile.length ? ` ${profile.join(", ")}.` : product.flavourProfile?.length ? "" : ` ${product.shortDescription}`;
   const base = (profile: string[]) =>
-    `${fullName} by KOKEN, made in the UAE.${profile.length ? ` ${profile.join(", ")}.` : ""} Bulk, OEM and private-label supply for B2B buyers.`;
+    `${fullName} by KOKEN, made in the UAE.${detail(profile)} Bulk, OEM and private-label supply for B2B buyers.`;
   // Keep descriptions within ~160 characters by dropping flavour notes if needed.
   const profile = [...(product.flavourProfile ?? [])];
   let description = base(profile);

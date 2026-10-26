@@ -24,6 +24,7 @@
 - Structured data: Organization/LocalBusiness, WebSite, Product, ItemList, BreadcrumbList, FAQPage, DefinedTermSet
 - About, Contact (with map), FAQ and Glossary pages; custom 404
 - Company name/address/phone live in `src/lib/site.ts` so they stay consistent everywhere
+- Canonical domain is `https://kokenstick.com` (set in `src/lib/site.ts` and `next.config.mjs`); the site is hosted on GoDaddy, which deploys from GitHub `main`
 - Optional env vars: `NEXT_PUBLIC_GA_ID` (GA4 + `generate_lead` conversion on quote submit), `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`, `NEXT_PUBLIC_BING_SITE_VERIFICATION`
 - Insights (`/insights`): 20 HNB guides in `src/data/blog/*.ts` (BlogPosting + FAQ schema, RSS at `/insights/rss.xml`); add a post by appending an entry to one of those files
 - Bump `contentUpdated` in `src/lib/site.ts` when copy changes

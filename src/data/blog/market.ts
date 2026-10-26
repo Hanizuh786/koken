@@ -174,7 +174,7 @@ export const marketPosts: BlogPost[] = [
   },
   {
     slug: "how-to-become-an-hnb-distributor",
-    title: "How to Become an HNB Distributor: A Practical Roadmap",
+    title: "How to Become an HNB Distributor: The Roadmap",
     description:
       "A roadmap for importers and wholesalers entering the heat-not-burn category: market research, licensing, supplier selection, range and retail support.",
     category: "Market entry",

@@ -1,8 +1,8 @@
 // Single source of truth for brand/NAP details so they stay consistent across
 // pages, structured data, llms.txt and the footer (SEO checklist #96, #109).
-export const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://koken-fzllc.vercel.app"
-).replace(/\/$/, "");
+// Canonical production domain (hosted on GoDaddy) used for canonical tags, sitemap,
+// robots.txt and llms.txt. Keep in sync with next.config.mjs.
+export const siteUrl = "https://kokenstick.com";
 
 export const company = {
   name: "KOKEN International FZ-LLC",
@@ -32,7 +32,7 @@ export const company = {
 };
 
 // Bump when page copy is meaningfully updated; used for dateModified and sitemap lastModified.
-export const contentUpdated = "2026-10-21";
+export const contentUpdated = "2026-10-26";
 
 export const absoluteUrl = (path: string) =>
   path.startsWith("http") ? path : `${siteUrl}${path.startsWith("/") ? path : `/${path}`}`;

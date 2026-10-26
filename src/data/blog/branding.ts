@@ -3,7 +3,7 @@ import type { BlogPost } from "./types";
 export const brandingPosts: BlogPost[] = [
   {
     slug: "oem-vs-private-label-hnb",
-    title: "OEM vs Private Label HNB: Which Model Fits Your Brand?",
+    title: "OEM vs Private Label HNB: Which Model Fits You?",
     description:
       "The difference between OEM and private-label heat-not-burn manufacturing, with a comparison of control, speed, cost drivers and when to choose each.",
     category: "OEM & private label",

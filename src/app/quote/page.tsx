@@ -2,7 +2,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import QuoteForm from "@/components/QuoteForm";
 import { pageMeta } from "@/lib/site";
 export const metadata = pageMeta({
-  title: "Request an HNB Manufacturing Quote (B2B)",
+  title: "Request a Bulk HNB Manufacturing Quote for B2B",
   description:
     "Send KOKEN a B2B request for quote for HNB production, granules manufacturing, OEM, private-label or bulk tobacco and herbal stick supply from the UAE.",
   path: "/quote",

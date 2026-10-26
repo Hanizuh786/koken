@@ -3,7 +3,7 @@ import type { BlogPost } from "./types";
 export const manufacturingPosts: BlogPost[] = [
   {
     slug: "what-are-hnb-granules",
-    title: "What Are HNB Granules? The Material Inside Heated Sticks",
+    title: "What Are HNB Granules? Inside Heated Tobacco Sticks",
     description:
       "HNB granules explained: what they are made from, why heated sticks use granules, and what buyers should ask about granules manufacturing.",
     category: "Manufacturing",
@@ -117,7 +117,7 @@ export const manufacturingPosts: BlogPost[] = [
   },
   {
     slug: "how-hnb-sticks-are-made",
-    title: "How HNB Sticks Are Made: From Granules to Packed Cartons",
+    title: "How HNB Sticks Are Made: From Granules to Cartons",
     description:
       "A step-by-step look at heat-not-burn stick production: filling preparation, rod making, filter assembly, cutting, inspection and packing.",
     category: "Manufacturing",
@@ -204,7 +204,7 @@ export const manufacturingPosts: BlogPost[] = [
   },
   {
     slug: "hnb-quality-control-checklist",
-    title: "HNB Quality Control Checklist for Importers and Brands",
+    title: "HNB Quality Control Checklist for Importers",
     description:
       "The quality checks that matter for heat-not-burn sticks: filling, physical dimensions, sensory consistency, packaging and documentation.",
     category: "Manufacturing",
@@ -303,7 +303,7 @@ export const manufacturingPosts: BlogPost[] = [
   },
   {
     slug: "how-to-choose-an-hnb-manufacturer",
-    title: "How to Choose an HNB Manufacturer: 10 Questions to Ask",
+    title: "How to Choose an HNB Manufacturer: 10 Questions",
     description:
       "A practical checklist for importers and brand owners choosing a heat-not-burn manufacturer: licensing, capabilities, quality, OEM support and logistics.",
     category: "Manufacturing",
@@ -378,7 +378,7 @@ export const manufacturingPosts: BlogPost[] = [
   },
   {
     slug: "why-manufacture-hnb-in-the-uae",
-    title: "Why Source HNB Products From the UAE?",
+    title: "Why Source HNB Products From the UAE: Buyer's Guide",
     description:
       "The case for UAE-made heat-not-burn products: location between major markets, free zone manufacturing, port and air links, and licensed production.",
     category: "Manufacturing",

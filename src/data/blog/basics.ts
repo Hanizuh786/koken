@@ -108,7 +108,7 @@ export const basicsPosts: BlogPost[] = [
   },
   {
     slug: "heated-tobacco-vs-cigarettes-vs-e-cigarettes",
-    title: "Heated Tobacco vs Cigarettes vs Vapes: Key Differences",
+    title: "Heated Tobacco vs Cigarettes vs Vapes Compared",
     description:
       "A side-by-side comparison of heated tobacco, conventional cigarettes and e-cigarettes: how each works, what it contains and how each is regulated.",
     category: "HNB basics",
@@ -297,7 +297,7 @@ export const basicsPosts: BlogPost[] = [
   },
   {
     slug: "hnb-flavour-profiles-explained",
-    title: "HNB Flavour Profiles Explained: Aroma, Body and Finish",
+    title: "HNB Flavour Profiles: Aroma, Body and Finish",
     description:
       "How to read an HNB flavour profile: what aroma, body and finish mean, and how to compare tobacco and herbal stick flavours when building a range.",
     category: "Products & flavours",

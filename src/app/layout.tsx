@@ -125,6 +125,7 @@ export default function RootLayout({
         <link rel="alternate" type="text/plain" title="llms.txt" href={agentPaths.llms} />
         <link rel="alternate" type="application/json" title="Product catalogue" href={agentPaths.catalog} />
         <link rel="service-desc" type="application/json" title="Catalogue and quote API" href={agentPaths.openapi} />
+        <link rel="api-catalog" href="/.well-known/api-catalog" />
       </head>
       <body>
         <JsonLd data={[organizationSchema, websiteSchema]} />

@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
-const siteUrl = new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://koken-fzllc.vercel.app");
+// Canonical production domain; keep in sync with src/lib/site.ts.
+const siteUrl = new URL("https://kokenstick.com");
 const canonicalHost = siteUrl.host;
 const alternateHost = canonicalHost.startsWith("www.") ? canonicalHost.slice(4) : `www.${canonicalHost}`;
 
