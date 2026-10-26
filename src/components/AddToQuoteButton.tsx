@@ -10,5 +10,6 @@ export default function AddToQuoteButton({ product, label = "Add to quote" }: { 
     setAdded(true);
     window.setTimeout(() => setAdded(false), 1800);
   }
-  return <button type="button" className="linkButton primary" onClick={handleAdd}>{added ? "Added ✓" : label}</button>;
+  // aria-live announces "Added" to screen readers and assistive agents after the click.
+  return <button type="button" className="linkButton primary" onClick={handleAdd} aria-live="polite" data-agent-action="addToQuote" data-product-slug={product.slug}>{added ? "Added ✓" : label}</button>;
 }

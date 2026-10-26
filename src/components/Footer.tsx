@@ -1,11 +1,16 @@
 import Link from "next/link";
+import { company } from "@/lib/site";
 export default function Footer() {
   return (
     <footer className="footerPro">
       <div className="footerTop">
         <div>
           <img
-            src="/images/koken-logo.png"
+            src="/images/koken-logo.webp"
+            width={640}
+            height={561}
+            loading="lazy"
+            decoding="async"
             alt="KOKEN International FZ-LLC logo"
           />
           <p>
@@ -15,42 +20,42 @@ export default function Footer() {
           </p>
         </div>
         <div>
-          <h3>Product categories</h3>
+          <h2>Product categories</h2>
           <Link href="/tobacco-sticks">Tobacco sticks</Link>
           <Link href="/herbal-sticks">Herbal sticks</Link>
-          <Link href="/devices">Devices</Link>
-          <Link href="/custom-branding">Custom branding</Link>
+          <Link href="/devices">HNB devices</Link>
+          <Link href="/custom-branding">OEM and private label</Link>
         </div>
         <div>
-          <h3>Business enquiries</h3>
+          <h2>Company</h2>
+          <Link href="/about">About KOKEN</Link>
+          <Link href="/insights">HNB insights and guides</Link>
+          <Link href="/faq">HNB manufacturing FAQ</Link>
+          <Link href="/glossary">HNB glossary</Link>
+          <Link href="/contact">Contact and location</Link>
+        </div>
+        <div>
+          <h2>Business enquiries</h2>
           <Link href="/quote">Request manufacturing quote</Link>
-          
-          <a href="mailto:sales@koken-inc.cn">sales@koken-inc.cn</a>
-          <a href="https://wa.me/971565053048">+971 56 505 3048</a>
-          <a
-            href="https://www.linkedin.com/company/kokenstick?originalSubdomain=ae"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
+          <a href={`mailto:${company.email}`}>{company.email}</a>
+          <a href={company.whatsappUrl} target="_blank" rel="noopener noreferrer">{company.telephoneDisplay}</a>
+          <a href={company.linkedin} target="_blank" rel="noopener noreferrer">
+            KOKEN on LinkedIn
           </a>
         </div>
         <div>
-          <h3>Location</h3>
-          <p>
-            Al Hamra Industrial Zone-FZ
+          <h2>Location</h2>
+          <address>
+            {company.name}
             <br />
-            Ras Al Khaimah, United Arab Emirates
-          </p>
-          <p>
-            KOKEN International FZ-LLC<br />
-            UAE-based HNB production and granules manufacturing for lawful
-            international B2B enquiries.
-          </p>
+            {company.address.streetAddress}
+            <br />
+            {company.address.addressLocality}, {company.address.countryName}
+          </address>
         </div>
       </div>
       <div className="footerBottom">
-        <span>© 2026 KOKEN International FZ-LLC. All rights reserved.</span>
+        <span>© {new Date().getFullYear()} {company.name}. All rights reserved.</span>
         <span>
           Product availability, labelling, compliance and import requirements
           vary by jurisdiction.

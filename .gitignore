@@ -12,3 +12,12 @@ build
 .env.local
 
 .DS_Store
+*.tsbuildinfo
+.env.example
+
+# Separate repository kept alongside this project
+harvey/
+
+# Source artwork; the site serves the optimised koken-*.webp/.jpg files
+public/images/products/herbal/
+public/images/products/tobacco_thumbnail/
