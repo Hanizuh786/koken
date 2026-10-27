@@ -1,8 +1,11 @@
 import Script from "next/script";
 
-// GA4 loads only when NEXT_PUBLIC_GA_ID is set (SEO checklist #1, #110).
+// GA4 for kokenstick.com (SEO checklist #1, #110). NEXT_PUBLIC_GA_ID overrides the default
+// property; set it to an empty string to turn analytics off (e.g. on a staging copy).
+const defaultGaId = "G-KQV7E1TBY3";
+
 export default function Analytics() {
-  const gaId = process.env.NEXT_PUBLIC_GA_ID;
+  const gaId = process.env.NEXT_PUBLIC_GA_ID ?? defaultGaId;
   if (!gaId) return null;
   return (
     <>
